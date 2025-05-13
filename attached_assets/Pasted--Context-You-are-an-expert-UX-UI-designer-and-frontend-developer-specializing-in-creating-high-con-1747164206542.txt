@@ -1,0 +1,149 @@
+# Context
+You are an expert UX/UI designer and frontend developer specializing in creating high-converting landing pages using modern design principles. Your task is to design and develop a single-page, responsive landing page for a new ebook titled "Domine Suas Finanças: O Guia Prático da Idealize Gestão para a Tranquilidade Financeira". The client is Idealize Gestão (@idealize.adm). The ABSOLUTE PRIMARY FOCUS is to deeply connect with the visitor's PAIN of not having financial control, addressing their unspoken questions and anxieties, and positioning the ebook as the clear, practical solution.
+
+## Task
+Create a single-page, fully responsive landing page that meticulously follows the structure and pain-focused copy direction provided below. The page must be visually aligned with the Idealize Gestão brand identity, as seen on their Instagram @idealize.adm, using the specified color palette.
+
+### Guidelines
+
+1.  **Overall Tone & Approach:**
+    *   Empathetic, deeply understanding of financial struggle, and a bit visceral in describing the pain.
+    *   Authoritative yet accessible, offering clear hope and a practical path forward.
+    *   Persuasive copywriting that directly answers the visitor's internal questions like "Como posso ter controle financeiro pessoal?", "Como colocar as contas em dia?", "Como posso mudar minha vida financeira?".
+
+2.  **Design & UI/UX:**
+    *   **Mobile-First Design:** Ensure the page is perfectly responsive across all standard breakpoints (use Tailwind CSS / ShadCN standard breakpoints).
+    *   **Visual Hierarchy:** Clear distinction between sections, headings, body text, and CTAs.
+    *   **Readability:** Excellent contrast and legible typography.
+    *   **Imagery:** Use placeholders for a 3D ebook mockup, icons for bullet points/benefits, and potentially subtle background textures or abstract graphics that evoke a sense of moving from chaos to order, aligned with the color palette.
+    *   **Professional & Trustworthy:** The design should reflect the serious nature of financial management but also be encouraging.
+
+3.  **Color Palette (Strict Adherence - inspired by @idealize.adm):**
+    *   **Primary Background:** Dark Gray/Near Black (e.g., `#101010`)
+    *   **Primary Text:** Off-White (e.g., `#F5F5F5`)
+    *   **Primary Accent (CTAs, Key Highlights, Icons):** Idealize Blue (e.g., `#1E2B4F`)
+    *   **Secondary Accent (Subtle highlights, section dividers, supporting elements):** Idealize Gold/Beige (e.g., `#C5A167`)
+    *   Use this palette to create a sophisticated, professional, and trustworthy feel. CTAs should use the Primary Accent color for strong visibility.
+
+4.  **Typography:**
+    *   **Headings:** A modern, strong, and clear sans-serif font (e.g., Montserrat, Poppins).
+    *   **Body Text:** A highly readable sans-serif font (e.g., Open Sans, Lato, Nunito).
+
+5.  **Structure and Content Flow:** Implement EACH of the following sections step-by-step, precisely as described. Focus heavily on incorporating the "PAIN" elements derived from the user questions provided (e.g., "O que é gestão financeira?", "Como organizar dívidas?", "Regra 50/30/20?").
+
+#### Constraints
+*   This is a single landing page. No navigation to other pages, except for potential social media links in the footer or a mailto: link for support.
+*   No complex backend integration is needed. Forms, if any (like for a newsletter, though not explicitly requested for the ebook sale page itself), should be designed with a clear path for future integration (e.g., with a service like Mailchimp or a webhook). For the ebook purchase, the CTA will likely lead to an external payment platform.
+*   Avoid generic placeholder text. Use the specific headline and content directions provided for each section.
+
+### Knowledge Base Snippet (for AI context)
+
+*   **Project:** Ebook Landing Page - "Domine Suas Finanças"
+*   **Client:** Idealize Gestão (@idealize.adm)
+*   **Objective:** Drive ebook sales by intensely focusing on the visitor's pain of financial discontrol and lack of knowledge.
+*   **Target Audience:** Individuals feeling overwhelmed, confused, and stressed by their personal finances, actively or passively asking themselves questions like "Como organizar minhas contas?", "Por onde começo a estudar finanças?", "Essa regra 50/30/20 funciona?".
+*   **Core Message:** We understand EXACTLY how you feel when you don't have financial control. This ebook is your direct answer, your clear path from confusion and anxiety to clarity and peace.
+
+---
+
+### Core Features (Page Sections - Build These Sequentially):
+
+**Start with the 'HERO SECTION' and build each subsequent section step-by-step as detailed below, ensuring that the copy directly reflects and agitates the specified pain points.**
+
+**SECTION 1: HERO – O GRITO DE SOCORRO E A PROMESSA DE ALÍVIO**
+*   **Purpose:** Grab attention instantly by reflecting the visitor's core pain and offering immediate hope.
+*   **Headline Options (Choose one or create a powerful variation):**
+    *   "O Dinheiro Controla Você ou Você Controla o Dinheiro? CHEGA de Viver Perdido e Sufocado Pelas Contas!"
+    *   "Sua Vida Financeira Parece um Navio à Deriva? Recupere o Leme AGORA e Navegue Rumo à Tranquilidade!"
+*   **Sub-headline:** "Se perguntas como 'Como posso ter controle financeiro?', 'Como colocar as contas em dia?' ou 'Como posso mudar minha vida financeira?' NÃO SAEM DA SUA CABEÇA, este guia é a resposta que você tanto procura. A Idealize Gestão te mostra o caminho, passo a passo."
+*   **Visual:** Prominent 3D Ebook Mockup ("Domine Suas Finanças") with a background graphic subtly transitioning from chaos (e.g., tangled lines) to order (e.g., a clear path).
+*   **CTA Button (Idealize Blue ` #1E2B4F` with Off-White `#F5F5F5` text):** "QUERO O MAPA PARA O CONTROLE FINANCEIRO!"
+
+**SECTION 2: IDENTIFICAÇÃO DA DOR PROFUNDA – "VOCÊ SE SENTE ASSIM?"**
+*   **Purpose:** Create deep empathy by mirroring the visitor's internal struggles and unanswered questions.
+*   **Headline:** "Sua Rotina é Dominada por Essas Perguntas e Angústias Financeiras?"
+*   **Content (Bullet points with relevant icons using Idealize Gold `#C5A167`):**
+    *   🤯 **CONFUSÃO TOTAL?** Você se pergunta "O que é essa tal de gestão financeira pessoal? O que preciso estudar pra entender meu dinheiro?" e a paralisia da incerteza te domina?
+    *   💸 **SEMPRE NO VERMELHO?** A pergunta "Como colocar as contas em dia?" se repete como um pesadelo, e "Como organizar minhas dívidas se já estou no vermelho?" parece uma missão impossível?
+    *   📉 **TENTATIVAS FRUSTRADAS?** Você já pensou "Preciso ter controle financeiro pessoal!" ou tentou planilhas, ouviu sobre a "regra 50/30/20", mas NADA parece funcionar na sua vida real?
+    *   🌪️ **PERDIDO(A) EM "COMO FAZER?"** Sua mente ferve com "Como faço um plano financeiro?", "Como divido meu salário pra sobrar dinheiro?", "Como consigo estudar finanças sozinho sem gastar uma fortuna?" – e as respostas parecem complexas demais?
+    *   🗣️ "Se cada uma dessas dúvidas reflete o caos que você sente, SAIBA: Isso tem solução, e ela é mais simples do que você imagina."
+
+**SECTION 3: AGITAÇÃO DO PROBLEMA – AS CONSEQUÊNCIAS REAIS DO DESCONTROLE**
+*   **Purpose:** Intensify the need for a solution by highlighting the far-reaching negative impacts of financial discontrol.
+*   **Headline:** "O Descontrole Financeiro Custa Caro: Sua Paz, Seus Sonhos, Sua Qualidade de Vida."
+*   **Content:** "Viver sem saber 'o que se faz na gestão financeira' ou 'como ter um controle financeiro pessoal' é mais do que apenas não ter dinheiro sobrando. É a ansiedade que aperta o peito a cada boleto. São as noites mal dormidas pensando em 'como colocar as contas em dia'. É sentir que você está apenas sobrevivendo, não vivendo. É ver seus sonhos de 'mudar de vida financeira' cada vez mais distantes porque você não sabe 'como fazer um plano financeiro pessoal' ou 'como organizar as contas de casa'. Essa falta de clareza e método ROUBA sua energia e suas melhores oportunidades."
+*   **Visual:** Subtle, abstract imagery representing stress or tangled paths.
+
+**SECTION 4: APRESENTAÇÃO DA SOLUÇÃO – "SUAS PERGUNTAS, FINALMENTE RESPONDIDAS!"**
+*   **Purpose:** Position the ebook as the definitive answer to all previously raised pains and questions.
+*   **Headline:** "CHEGA DE DÚVIDAS! Ebook 'Domine Suas Finanças': Todas as Respostas e o 'COMO FAZER' Para Você Assumir o Controle TOTAL!"
+*   **Visual:** Ebook mockup in a prominent position, perhaps with illustrative icons around it symbolizing understanding, clarity, and tools (e.g., a lightbulb, a checkmark, a gear).
+*   **Description:** "Você já se afogou em pensamentos como 'Qual curso fazer para administrar meu dinheiro?' ou 'Como estudar finanças sozinho de forma eficaz?'. O Ebook 'Domine Suas Finanças' da Idealize Gestão foi meticulosamente criado para ser o SEU GUIA DEFINITIVO. Transformamos suas perguntas angustiantes em um passo a passo CLARO e ACIONÁVEL. Aqui você vai descobrir como ter uma 'gestão financeira pessoal' que realmente funciona, 'como organizar suas dívidas' de forma inteligente e como métodos como a 'regra 50/30/20' podem, sim, fazer seu dinheiro sobrar."
+
+**SECTION 5: BENEFÍCIOS CONCRETOS – DE "COMO EU FAÇO?" PARA "EU CONSIGO!"**
+*   **Purpose:** Translate the relief from pain and answered questions into tangible, empowering benefits.
+*   **Headline:** "Deixe a Incerteza Para Trás e Conquiste a Confiança de Quem Sabe Para Onde Vai (e Como Chegar Lá!):"
+*   **Content (Bullet points with checkmark icons ✓ in Idealize Blue `#1E2B4F`):**
+    *   ✓ **CLAREZA ABSOLUTA:** Entenda de uma vez por todas 'o que é gestão financeira' e veja seu dinheiro trabalhando PARA você, não contra.
+    *   ✓ **CONTAS EM DIA, SEM SUFOCO:** Aprenda 'como colocar as contas em dia' e 'como organizar as dívidas', mesmo se você acha que está no fundo do poço.
+    *   ✓ **PLANO QUE FUNCIONA:** Finalmente saiba 'como fazer um plano financeiro pessoal' e 'como dividir o dinheiro para poupar', adaptado à SUA realidade.
+    *   ✓ **AUTONOMIA E CONHECIMENTO:** Domine 'o que estudar em finanças pessoais' de forma simples e aplicável, sem precisar ser um 'gestor financeiro' profissional.
+    *   ✓ **MÉTODOS DESCOMPLICADOS:** Descubra como a 'regra 50/30/20' e outros '5 pilares da educação financeira' podem transformar seu orçamento.
+
+**SECTION 6: CONTEÚDO DETALHADO DO EBOOK – "O 'COMO FAZER' PARA CADA DOR SUA"**
+*   **Purpose:** Show specific content addressing key questions and pains.
+*   **Headline:** "Por Dentro do Guia 'Domine Suas Finanças': As Respostas Práticas Que Você Precisa Para Cada Desafio:"
+*   **Content (Formatted as modules/chapters, maybe with icons):**
+    *   **MÓDULO 1: Entendendo o Caos – O Diagnóstico da Sua Vida Financeira:** A resposta para "O que é gestão financeira pessoal?" aplicada a VOCÊ.
+    *   **MÓDULO 2: Seu Orçamento à Prova de Falhas (Desvendando o 50/30/20 e Outros Segredos):** Aprenda 'como dividir o dinheiro para poupar' e 'como fazer um plano financeiro pessoal' que você consiga seguir.
+    *   **MÓDULO 3: Operação Contas em Dia (O Fim das Dívidas e da Angústia):** Estratégias claras para 'como organizar as dívidas' e 'como colocar as contas em dia'.
+    *   **MÓDULO 4: Blindagem Financeira (Construindo Sua Reserva e Tranquilidade):** O caminho para 'mudar minha vida financeira' com segurança.
+    *   **MÓDULO 5: Os Segredos de Quem Faz o Dinheiro Sobrar (e Investe!):** 'O que estudar em finanças pessoais' para dar os primeiros passos em investimentos.
+    *   **MÓDULO 6: Os Pilares da Educação Financeira na Prática (Para Nunca Mais Perder o Controle):** Entenda os '5 pilares da educação financeira' e os '4 pilares da gestão financeira' de forma simples.
+
+**SECTION 7: BÔNUS EXCLUSIVOS (Aumentar Valor Percebido)**
+*   **(As per previous detailed structure: List 2-3 compelling bonuses like a smart spreadsheet, a mini-video course on a specific pain point like debt negotiation, or a checklist for financial habits. Assign a perceived value to each and total.)**
+*   **Headline:** "OFERTA ESPECIAL: Leve o Ebook + BÔNUS EXCLUSIVOS Para Acelerar Seu Controle Financeiro!"
+*   **CTA (Idealize Blue `#1E2B4F`):** "QUERO O EBOOK + TODOS OS BÔNUS AGORA!"
+
+**SECTION 8: SOBRE A IDEALIZE GESTÃO (Autoridade)**
+*   **(As per previous detailed structure: Short bio of Idealize Gestão, highlighting expertise in consultancy, courses, and helping people/businesses achieve clarity and results. Mention @idealize.adm. Include a professional photo of a key person if appropriate, e.g., Breno Baleeiro).**
+*   **Headline:** "Quem Está Por Trás Deste Método Transformador?"
+
+**SECTION 9: PROVA SOCIAL (Confiança)**
+*   **(As per previous detailed structure: 2-3 concise, powerful testimonials focusing on relief from financial pain and achievement of control/clarity. Use real names/initials and location/profession if possible.星 ratings if applicable).**
+*   **Headline:** "Pessoas Reais, Dores Reais, Resultados Reais: Veja Quem Já Está no Controle!"
+
+**SECTION 10: OFERTA PRINCIPAL E CTA FINAL (Urgência e Escassez)**
+*   **(As per previous detailed structure: Clearly state the full value, then the special discounted price. Offer payment options if applicable, like installments. Emphasize limited-time offer/bonuses.)**
+*   **Headline:** "CHEGA DE SOFRER COM O DESCONTROLE! Sua Chance de Dominar Suas Finanças por um Valor Irrisório:"
+*   **Pricing Display:**
+    *   Valor Normal: R$XXX (riscado)
+    *   PREÇO ESPECIAL HOJE: R$YY
+    *   Ou X vezes de R$Z
+*   **Main CTA (BIG, Idealize Blue `#1E2B4F` with Off-White `#F5F5F5` text):** "SIM! QUERO TRANSFORMAR MINHA VIDA FINANCEIRA POR APENAS R$YY!"
+*   **Small print urgency:** "Bônus e preço especial válidos por tempo limitado!" (Maybe a countdown timer icon).
+
+**SECTION 11: GARANTIA INCONDICIONAL (Redução de Risco)**
+*   **(As per previous detailed structure: Strong satisfaction guarantee – e.g., 7 or 15 days. Clear "money-back" promise.)**
+*   **Headline:** "RISCO ZERO! Sua Paz Financeira Garantida ou Seu Dinheiro de Volta!"
+*   **Visual:** A guarantee badge/seal using Idealize Gold `#C5A167`.
+
+**SECTION 12: PERGUNTAS FREQUENTES (FAQ – Quebra de Objeções Finais)**
+*   **(As per previous detailed structure: Answer 3-5 common questions related to the ebook, its content, accessibility, and who it's for, especially addressing concerns of beginners or those feeling lost – "Serve para mim que não entendo NADA de finanças?", "Como vou acessar o material?", "E se eu não conseguir aplicar?").**
+*   **Headline:** "Ainda Com Dúvidas? Nós Respondemos!"
+
+**SECTION 13: ÚLTIMA CHAMADA (Reforço e Última Chance)**
+*   **Purpose:** Last push for conversion, appealing to the desire for change.
+*   **Headline:** "Sua Jornada do Caos Financeiro à Paz de Espírito Começa com UM Clique."
+*   **Short Text:** "Não deixe o 'como fazer?' te paralisar mais. Todas as respostas que você buscou sobre 'gestão financeira pessoal', 'colocar contas em dia', 'estudar finanças' e 'mudar sua vida financeira' estão neste guia. A decisão é sua."
+*   **Final CTA (Same as Section 10):** "QUERO MEU GUIA PARA O CONTROLE FINANCEIRO AGORA!"
+
+**SECTION 14: RODAPÉ**
+*   **Content:** Idealize Gestão Logo, Copyright © [Current Year] Idealize Gestão, Contato (email de suporte), Link para Política de Privacidade/Termos, Link para @idealize.adm Instagram. CNPJ para transparência.
+
+---
+
+**Final Instructions for Lovable:**
+"Please ensure all design elements strictly adhere to the specified color palette and typographic guidelines to maintain brand consistency with Idealize Gestão. The primary goal is a landing page that deeply resonates with the user's financial pain and compellingly presents the ebook as the most effective solution. Use a step-by-step approach, building section by section. If uncertain about any aspect of implementing the pain-focused copy or design for a specific section, please ask for clarification before proceeding."
