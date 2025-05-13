@@ -53,11 +53,11 @@ export default function Solution() {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-['Montserrat']">
-              <span className="text-[#C5A167]">Encontre clareza</span> <span className="block mt-2">Ebook 'Domine Suas Finanças': Um guia prático para construir uma relação saudável com seu dinheiro</span>
+              <span className="text-[#C5A167]">Encontre clareza</span> <span className="block mt-2">Ebook Domine Suas Finanças: Um guia prático para construir uma relação saudável com seu dinheiro</span>
             </h2>
             
             <p className="text-lg leading-relaxed">
-              Nós entendemos aquela busca incessante por respostas como <span className="italic">"por onde começar a organizar minhas finanças"</span> ou <span className="italic">"como aprender sobre dinheiro de forma objetiva"</span>. Foi pensando nisso que criamos o ebook <span className="font-bold">'Domine Suas Finanças'</span> – para ser um <span className="text-[#C5A167] font-bold">companheiro de jornada</span> que realmente entende suas necessidades.
+              Nós entendemos aquela busca incessante por respostas sobre como começar a organizar suas finanças ou aprender sobre dinheiro de forma objetiva. Foi pensando nisso que criamos o ebook <span className="font-bold">Domine Suas Finanças</span> – para ser um <span className="text-[#C5A167] font-bold">companheiro de jornada</span> que realmente entende suas necessidades.
             </p>
             
             <p className="text-lg leading-relaxed">

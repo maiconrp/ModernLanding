@@ -32,7 +32,7 @@ export default function FinalCTA() {
               </div>
               
               <div className="w-full md:w-1/2 text-left">
-                <h3 className="text-2xl font-bold font-['Montserrat'] mb-4">Ebook "Domine Suas Finanças"</h3>
+                <h3 className="text-2xl font-bold font-['Montserrat'] mb-4">Ebook Domine Suas Finanças</h3>
                 
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-start">

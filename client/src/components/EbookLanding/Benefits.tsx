@@ -106,7 +106,7 @@ export default function Benefits() {
               <h3 className="text-xl font-bold font-['Montserrat'] mb-4">MÉTODOS DESCOMPLICADOS</h3>
               
               <p className="text-[#F5F5F5]/90">
-                Conheça abordagens como a "regra 50/30/20" e outros princípios fundamentais da educação financeira de forma prática e adaptada ao seu contexto, transformando conceitos em ferramentas que realmente funcionam no seu dia a dia.
+                Conheça abordagens como a regra 50/30/20 e outros princípios fundamentais da educação financeira de forma prática e adaptada ao seu contexto, transformando conceitos em ferramentas que realmente funcionam no seu dia a dia.
               </p>
             </div>
             

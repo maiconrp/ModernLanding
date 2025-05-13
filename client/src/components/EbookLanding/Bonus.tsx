@@ -19,7 +19,7 @@ export default function Bonus() {
               </div>
             </div>
             
-            <h3 className="text-2xl font-bold font-['Montserrat'] text-center mb-6">Ebook "Domine Suas Finanças"</h3>
+            <h3 className="text-2xl font-bold font-['Montserrat'] text-center mb-6">Ebook Domine Suas Finanças</h3>
             
             <div className="flex-grow space-y-4 mb-6">
               <p className="text-center">
