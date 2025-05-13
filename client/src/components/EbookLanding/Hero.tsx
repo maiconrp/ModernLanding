@@ -18,7 +18,7 @@ export default function Hero() {
             </h1>
             
             <p className="text-lg md:text-xl font-['Nunito'] text-[#F5F5F5]/80 leading-relaxed">
-              Sabe aquela sensação de que os pensamentos sobre <span className="italic font-semibold">"como organizar melhor as finanças"</span>, <span className="italic font-semibold">"como finalmente colocar as contas em ordem"</span> ou <span className="italic font-semibold">"como construir uma vida financeira mais tranquila"</span> <span className="text-[#C5A167] font-bold">parecem não dar trégua</span>? Estamos aqui para ajudar. A Idealize Gestão caminha com você, passo a passo, nessa jornada.
+              Sabe aquela sensação de que os pensamentos sobre como organizar melhor as finanças, colocar as contas em ordem ou construir uma vida financeira mais tranquila <span className="text-[#C5A167] font-bold">parecem não dar trégua</span>? Estamos aqui para ajudar. A Idealize Gestão caminha com você, passo a passo, nessa jornada.
             </p>
             
             <div className="pt-4">

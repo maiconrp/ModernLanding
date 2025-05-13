@@ -23,7 +23,7 @@ export default function PainPoints() {
             </div>
             <h3 className="text-xl font-bold font-['Montserrat'] mb-4 text-[#C5A167]">SENSAÇÃO DE CONFUSÃO?</h3>
             <p className="text-[#F5F5F5]/90 flex-grow">
-              Às vezes, só de ouvir "gestão financeira pessoal" já dá um nó na cabeça, não é? Entendemos como é buscar <span className="italic">"o que realmente preciso saber sobre meu dinheiro"</span> e acabar se sentindo ainda mais perdido com tanta informação por aí.
+              Às vezes, só de ouvir falar sobre gestão financeira pessoal já dá um nó na cabeça, não é? Entendemos como é difícil buscar informações sobre o que realmente precisamos saber sobre nosso dinheiro e acabar se sentindo ainda mais perdido com tantas opções e conselhos por aí.
             </p>
             
             {/* A person looking confused while staring at financial documents */}
@@ -43,7 +43,7 @@ export default function PainPoints() {
             </div>
             <h3 className="text-xl font-bold font-['Montserrat'] mb-4 text-[#C5A167]">DESAFIO COM AS CONTAS?</h3>
             <p className="text-[#F5F5F5]/90 flex-grow">
-              Aquela preocupação sobre <span className="italic">"como finalmente colocar as contas em dia"</span> que aparece bem na hora de dormir... Sabemos como é frustrante. E quando pensamos <span className="italic">"será que consigo organizar minhas dívidas mesmo estando no vermelho?"</span>, a tarefa parece ainda mais desafiadora.
+              Aquela preocupação sobre como finalmente colocar as contas em dia que aparece bem na hora de dormir... Sabemos como é frustrante. E quando nos perguntamos se é possível organizar nossas dívidas mesmo estando no vermelho, a tarefa parece ainda mais desafiadora.
             </p>
             
             {/* A person looking stressed while checking finances on laptop */}
@@ -63,7 +63,7 @@ export default function PainPoints() {
             </div>
             <h3 className="text-xl font-bold font-['Montserrat'] mb-4 text-[#C5A167]">TENTATIVAS QUE NÃO DERAM CERTO?</h3>
             <p className="text-[#F5F5F5]/90 flex-grow">
-              Já teve aquele momento de determinação: <span className="italic">"Agora vou organizar minhas finanças de uma vez!"</span> Talvez até tenha começado planilhas ou ouvido falar da <span className="italic">"regra 50/30/20"</span>, mas sentiu que esses métodos não se encaixavam perfeitamente na sua rotina?
+              Já teve aquele momento de determinação em que você decidiu organizar suas finanças de uma vez por todas? Talvez até tenha começado planilhas ou tentado aplicar a regra 50/30/20, mas sentiu que esses métodos não se encaixavam perfeitamente na sua rotina?
             </p>
             
             {/* A person looking frustrated with financial paperwork */}
@@ -85,7 +85,7 @@ export default function PainPoints() {
             </div>
             <h3 className="text-xl font-bold font-['Montserrat'] mb-4 text-[#C5A167]">BUSCANDO UM CAMINHO PRÁTICO?</h3>
             <p className="text-[#F5F5F5]/90 flex-grow">
-              É natural ficar com a cabeça cheia de questões como <span className="italic">"qual seria o caminho para criar um plano financeiro efetivo?"</span>, <span className="italic">"como posso distribuir meu salário para ter uma sobra no fim do mês?"</span> ou <span className="italic">"como aprender sobre finanças sem investir muito?"</span> E às vezes parece que as respostas são mais complicadas do que deveriam ser, não é?
+              É natural ficar com a cabeça cheia de questões sobre qual seria o melhor caminho para criar um plano financeiro efetivo, como distribuir o salário para ter uma sobra no fim do mês ou como aprender sobre finanças sem grandes investimentos. E às vezes parece que as respostas são mais complicadas do que deveriam ser, não é?
             </p>
             
             {/* A person looking overwhelmed with financial planning */}
