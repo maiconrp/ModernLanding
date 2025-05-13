@@ -58,7 +58,7 @@ export default function EbookContent() {
     {
       number: 6,
       title: "Os Pilares da Educação Financeira na Prática",
-      description: "Entenda os '5 pilares da educação financeira' e os '4 pilares da gestão financeira' de forma simples.",
+      description: "Vamos explorar juntos os princípios fundamentais da educação e gestão financeira de uma forma acessível e aplicável ao seu dia a dia.",
       topics: [
         "Hábitos diários que transformam sua relação com dinheiro",
         "Como manter-se motivado em sua jornada financeira",
