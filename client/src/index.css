@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 6%;
+  --foreground: 0 0% 96%;
+  --muted: 0 0% 15%;
+  --muted-foreground: 0 0% 80%;
+  --popover: 0 0% 6%;
+  --popover-foreground: 0 0% 96%;
+  --card: 0 0% 6%;
+  --card-foreground: 0 0% 96%;
+  --border: 0 0% 15%;
+  --input: 0 0% 15%;
+  --primary: 218 42% 22%;
+  --primary-foreground: 0 0% 96%;
+  --secondary: 37 35% 52%;
+  --secondary-foreground: 0 0% 6%;
+  --accent: 37 35% 52%;
+  --accent-foreground: 0 0% 6%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 218 42% 22%;
+  --radius: 0.5rem;
+}
+
+/* Glass effects */
+.glass {
+  @apply bg-opacity-10 bg-primary/10 backdrop-blur-md border border-white/10;
+}
+
+.glass-gold {
+  @apply bg-opacity-10 bg-secondary/10 backdrop-blur-md border border-secondary/20;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Pulsating CTA */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(197, 161, 103, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(197, 161, 103, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(197, 161, 103, 0);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-[#101010] text-[#F5F5F5] font-['Nunito'] antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-['Montserrat'] font-bold;
+  }
+}
+
+@layer components {
+  .gradient-bg {
+    @apply bg-gradient-to-b from-[#101010] to-[rgba(30,43,79,0.5)];
+  }
+
+  .cta-primary {
+    @apply px-8 py-4 bg-[#1E2B4F] text-[#F5F5F5] rounded-lg font-bold uppercase tracking-wider transition transform hover:scale-105 hover:shadow-lg text-center;
+  }
+
+  .cta-secondary {
+    @apply px-8 py-4 bg-[#C5A167] text-[#101010] rounded-lg font-bold uppercase tracking-wider transition transform hover:scale-105 hover:shadow-lg text-center;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #101010;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E2B4F;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A167;
+}
