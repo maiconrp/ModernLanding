@@ -53,15 +53,15 @@ export default function Solution() {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-['Montserrat']">
-              <span className="text-[#C5A167] uppercase">CHEGA DE DÚVIDAS!</span> <span className="block mt-2">Ebook 'Domine Suas Finanças': Todas as Respostas e o 'COMO FAZER' Para Você Assumir o Controle TOTAL!</span>
+              <span className="text-[#C5A167]">Encontre clareza</span> <span className="block mt-2">Ebook 'Domine Suas Finanças': Um guia prático para construir uma relação saudável com seu dinheiro</span>
             </h2>
             
             <p className="text-lg leading-relaxed">
-              Você já se afogou em pensamentos como <span className="italic">"Qual curso fazer para administrar meu dinheiro?"</span> ou <span className="italic">"Como estudar finanças sozinho de forma eficaz?"</span>. O Ebook <span className="font-bold">'Domine Suas Finanças'</span> da Idealize Gestão foi meticulosamente criado para ser o <span className="uppercase text-[#C5A167] font-bold">SEU GUIA DEFINITIVO</span>.
+              Nós entendemos aquela busca incessante por respostas como <span className="italic">"por onde começar a organizar minhas finanças"</span> ou <span className="italic">"como aprender sobre dinheiro de forma objetiva"</span>. Foi pensando nisso que criamos o ebook <span className="font-bold">'Domine Suas Finanças'</span> – para ser um <span className="text-[#C5A167] font-bold">companheiro de jornada</span> que realmente entende suas necessidades.
             </p>
             
             <p className="text-lg leading-relaxed">
-              Transformamos suas perguntas angustiantes em um passo a passo <span className="uppercase font-bold">CLARO</span> e <span className="uppercase font-bold">ACIONÁVEL</span>. Aqui você vai descobrir como ter uma <span className="italic">"gestão financeira pessoal"</span> que realmente funciona, <span className="italic">"como organizar suas dívidas"</span> de forma eficiente.
+              Transformamos conhecimentos financeiros complexos em um caminho <span className="font-bold">acessível</span> e <span className="font-bold">prático</span> para você. Aqui você encontrará maneiras de desenvolver uma gestão financeira que se adapte à sua vida real e técnicas para reorganizar suas finanças com tranquilidade e confiança.
             </p>
             
             <div className="mt-8">

@@ -13,31 +13,31 @@ export default function ProblemAggravation() {
           {/* Problem description */}
           <div className="w-full lg:w-1/2 space-y-6">
             <p className="text-lg leading-relaxed">
-              Viver sem saber <span className="italic">"o que se faz na gestão financeira"</span> ou <span className="italic">"como ter um controle financeiro pessoal"</span> é mais do que apenas não ter dinheiro sobrando. É a ansiedade que aperta o peito a cada boleto. São as noites mal dormidas pensando em <span className="italic">"como colocar as contas em dia"</span>.
+              Quando ainda não encontramos nosso caminho na gestão financeira, as consequências vão muito além de não ter uma reserva no fim do mês. É aquela sensação de aperto no peito quando chega uma notificação de cobrança. São aquelas noites inquietas onde os pensamentos sobre contas não nos deixam descansar.
             </p>
             
             <p className="text-lg leading-relaxed">
-              É sentir que você está apenas sobrevivendo, não vivendo. É ver seus sonhos de <span className="italic">"mudar de vida financeira"</span> cada vez mais distantes porque você não sabe <span className="italic">"como fazer um plano financeiro pessoal"</span>.
+              É a impressão de que estamos apenas reagindo à vida, não vivendo-a plenamente. É ver nossos sonhos de construir uma vida financeira mais tranquila ficando cada vez mais distantes porque parece difícil encontrar um plano financeiro que realmente funcione para nossa realidade.
             </p>
             
             <div className="glass p-6 rounded-xl">
-              <p className="text-lg font-semibold text-[#C5A167]">O custo real vai muito além do financeiro:</p>
+              <p className="text-lg font-semibold text-[#C5A167]">O impacto vai além dos números na conta:</p>
               <ul className="mt-4 space-y-3">
                 <li className="flex items-start">
                   <span className="text-[#C5A167] mr-3 mt-1"><FaTimesCircle /></span>
-                  <span>Relacionamentos deteriorados por discussões sobre dinheiro</span>
+                  <span>Momentos preciosos com família e amigos afetados por tensões sobre finanças</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#C5A167] mr-3 mt-1"><FaTimesCircle /></span>
-                  <span>Saúde mental comprometida pela preocupação constante</span>
+                  <span>Bem-estar emocional comprometido por preocupações recorrentes</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#C5A167] mr-3 mt-1"><FaTimesCircle /></span>
-                  <span>Oportunidades perdidas por falta de recursos ou planejamento</span>
+                  <span>Chances de crescimento que passam despercebidas quando estamos em modo de sobrevivência</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#C5A167] mr-3 mt-1"><FaTimesCircle /></span>
-                  <span>Autoestima minada pela sensação de fracasso</span>
+                  <span>Confiança em si mesmo enfraquecida pelos ciclos de tentativa e erro</span>
                 </li>
               </ul>
             </div>
@@ -56,7 +56,7 @@ export default function ProblemAggravation() {
             </div>
             
             <p className="mt-6 text-center text-lg italic text-[#F5F5F5]/80">
-              "Sentir que está perdendo o controle da sua vida financeira é uma das experiências mais angustiantes do mundo moderno."
+              "Quando nos sentimos desconectados das nossas finanças, é como se uma nuvem de preocupação nos acompanhasse por onde quer que vamos. Porém, com os passos certos, essa sensação pode dar lugar a uma clareza revigorante."
             </p>
           </div>
         </div>

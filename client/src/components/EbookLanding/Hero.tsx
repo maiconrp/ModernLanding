@@ -14,18 +14,18 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold font-['Montserrat'] leading-tight text-[#F5F5F5]">
-              O Dinheiro <span className="text-[#C5A167]">Controla Você</span> ou Você <span className="text-[#C5A167]">Controla o Dinheiro</span>? <span className="block mt-2">CHEGA de Viver Perdido e Sufocado Pelas Contas!</span>
+              A relação com o <span className="text-[#C5A167]">seu dinheiro</span> pode ser mais <span className="text-[#C5A167]">leve e tranquila</span> <span className="block mt-2">É hora de respirar aliviado ao pensar nas suas finanças</span>
             </h1>
             
             <p className="text-lg md:text-xl font-['Nunito'] text-[#F5F5F5]/80 leading-relaxed">
-              Se perguntas como <span className="italic font-semibold">"Como posso ter controle financeiro?"</span>, <span className="italic font-semibold">"Como colocar as contas em dia?"</span> ou <span className="italic font-semibold">"Como posso mudar minha vida financeira?"</span> <span className="text-[#C5A167] font-bold">NÃO SAEM DA SUA CABEÇA</span>, este guia é a resposta que você tanto procura. A Idealize Gestão te mostra o caminho, passo a passo.
+              Sabe aquela sensação de que os pensamentos sobre <span className="italic font-semibold">"como organizar melhor as finanças"</span>, <span className="italic font-semibold">"como finalmente colocar as contas em ordem"</span> ou <span className="italic font-semibold">"como construir uma vida financeira mais tranquila"</span> <span className="text-[#C5A167] font-bold">parecem não dar trégua</span>? Estamos aqui para ajudar. A Idealize Gestão caminha com você, passo a passo, nessa jornada.
             </p>
             
             <div className="pt-4">
               <Button 
                 className="pulse px-8 py-4 bg-[#1E2B4F] text-[#F5F5F5] rounded-lg font-bold uppercase tracking-wider transition transform hover:scale-105 hover:shadow-lg text-center w-full sm:w-auto"
               >
-                QUERO O MAPA PARA O CONTROLE FINANCEIRO!
+                QUERO ENCONTRAR MEU CAMINHO FINANCEIRO!
               </Button>
             </div>
           </motion.div>

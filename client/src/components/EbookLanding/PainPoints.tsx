@@ -21,9 +21,9 @@ export default function PainPoints() {
             <div className="text-4xl text-[#C5A167] mb-4">
               <FaQuestionCircle />
             </div>
-            <h3 className="text-xl font-bold font-['Montserrat'] mb-4 text-[#C5A167]">CONFUSÃO TOTAL?</h3>
+            <h3 className="text-xl font-bold font-['Montserrat'] mb-4 text-[#C5A167]">SENSAÇÃO DE CONFUSÃO?</h3>
             <p className="text-[#F5F5F5]/90 flex-grow">
-              Você se pergunta <span className="italic">"O que é essa tal de gestão financeira pessoal? O que preciso estudar pra entender meu dinheiro?"</span> e a paralisia da incerteza te domina?
+              Às vezes, só de ouvir "gestão financeira pessoal" já dá um nó na cabeça, não é? Entendemos como é buscar <span className="italic">"o que realmente preciso saber sobre meu dinheiro"</span> e acabar se sentindo ainda mais perdido com tanta informação por aí.
             </p>
             
             {/* A person looking confused while staring at financial documents */}
@@ -41,9 +41,9 @@ export default function PainPoints() {
             <div className="text-4xl text-[#C5A167] mb-4">
               <FaChartLine />
             </div>
-            <h3 className="text-xl font-bold font-['Montserrat'] mb-4 text-[#C5A167]">SEMPRE NO VERMELHO?</h3>
+            <h3 className="text-xl font-bold font-['Montserrat'] mb-4 text-[#C5A167]">DESAFIO COM AS CONTAS?</h3>
             <p className="text-[#F5F5F5]/90 flex-grow">
-              A pergunta <span className="italic">"Como colocar as contas em dia?"</span> se repete como um pesadelo, e <span className="italic">"Como organizar minhas dívidas se já estou no vermelho?"</span> parece uma missão impossível?
+              Aquela preocupação sobre <span className="italic">"como finalmente colocar as contas em dia"</span> que aparece bem na hora de dormir... Sabemos como é frustrante. E quando pensamos <span className="italic">"será que consigo organizar minhas dívidas mesmo estando no vermelho?"</span>, a tarefa parece ainda mais desafiadora.
             </p>
             
             {/* A person looking stressed while checking finances on laptop */}
@@ -61,9 +61,9 @@ export default function PainPoints() {
             <div className="text-4xl text-[#C5A167] mb-4">
               <FaRedoAlt />
             </div>
-            <h3 className="text-xl font-bold font-['Montserrat'] mb-4 text-[#C5A167]">TENTATIVAS FRUSTRADAS?</h3>
+            <h3 className="text-xl font-bold font-['Montserrat'] mb-4 text-[#C5A167]">TENTATIVAS QUE NÃO DERAM CERTO?</h3>
             <p className="text-[#F5F5F5]/90 flex-grow">
-              Você já pensou <span className="italic">"Preciso ter controle financeiro pessoal!"</span> ou tentou planilhas, ouviu sobre a <span className="italic">"regra 50/30/20"</span>, mas NADA parece funcionar na sua vida real?
+              Já teve aquele momento de determinação: <span className="italic">"Agora vou organizar minhas finanças de uma vez!"</span> Talvez até tenha começado planilhas ou ouvido falar da <span className="italic">"regra 50/30/20"</span>, mas sentiu que esses métodos não se encaixavam perfeitamente na sua rotina?
             </p>
             
             {/* A person looking frustrated with financial paperwork */}
@@ -83,9 +83,9 @@ export default function PainPoints() {
             <div className="text-4xl text-[#C5A167] mb-4">
               <FaCompass />
             </div>
-            <h3 className="text-xl font-bold font-['Montserrat'] mb-4 text-[#C5A167]">PERDIDO(A) EM "COMO FAZER?"</h3>
+            <h3 className="text-xl font-bold font-['Montserrat'] mb-4 text-[#C5A167]">BUSCANDO UM CAMINHO PRÁTICO?</h3>
             <p className="text-[#F5F5F5]/90 flex-grow">
-              Sua mente ferve com <span className="italic">"Como faço um plano financeiro?"</span>, <span className="italic">"Como divido meu salário pra sobrar dinheiro?"</span>, <span className="italic">"Como consigo estudar finanças sozinho sem gastar uma fortuna?"</span> – e as respostas parecem complexas demais?
+              É natural ficar com a cabeça cheia de questões como <span className="italic">"qual seria o caminho para criar um plano financeiro efetivo?"</span>, <span className="italic">"como posso distribuir meu salário para ter uma sobra no fim do mês?"</span> ou <span className="italic">"como aprender sobre finanças sem investir muito?"</span> E às vezes parece que as respostas são mais complicadas do que deveriam ser, não é?
             </p>
             
             {/* A person looking overwhelmed with financial planning */}
@@ -105,7 +105,7 @@ export default function PainPoints() {
                 <FaLightbulb />
               </div>
               <p className="text-xl md:text-2xl font-semibold font-['Nunito']">
-                Se cada uma dessas dúvidas reflete o caos que você sente, <span className="uppercase text-[#C5A167] font-bold">SAIBA</span>: Isso tem solução, e ela é mais simples do que você imagina.
+                Se você se identificou com essas situações, queremos que você <span className="uppercase text-[#C5A167] font-bold">SAIBA</span>: Existe um caminho mais claro e acessível do que você imagina, e estamos aqui para percorrê-lo com você.
               </p>
             </div>
           </div>
