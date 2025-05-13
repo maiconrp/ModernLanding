@@ -34,15 +34,15 @@ export default function Authority() {
               </h3>
               
               <p className="text-lg leading-relaxed mb-6">
-                Com mais de 8 anos de experiência em consultoria financeira, a Idealize Gestão se destacou no mercado por transformar conceitos complexos de gestão financeira em estratégias práticas e acessíveis.
+                Ao longo de mais de 8 anos caminhando ao lado de pessoas e empresas em suas jornadas financeiras, desenvolvemos na Idealize Gestão uma forma única de traduzir conceitos que parecem complexos em estratégias que realmente fazem sentido no dia a dia.
               </p>
               
               <p className="text-lg leading-relaxed mb-6">
-                Nossa equipe de especialistas em finanças pessoais e empresariais já ajudou mais de 1.500 pessoas a saírem do vermelho e construírem uma vida financeira sólida e próspera.
+                Nossa equipe já teve o privilégio de acompanhar mais de 1.500 pessoas em sua transformação de uma situação de preocupação financeira para uma relação mais saudável e próspera com o dinheiro.
               </p>
               
               <p className="text-lg leading-relaxed">
-                Através de nossa metodologia exclusiva, combinamos educação financeira com ferramentas práticas que se adaptam à realidade de cada pessoa – porque acreditamos que todos merecem ter controle sobre seu dinheiro, independentemente de quanto ganham.
+                O que nos diferencia é nossa abordagem personalizada – acreditamos que cada pessoa tem uma história única com o dinheiro e merece encontrar seu próprio caminho de prosperidade, independentemente do valor em sua conta bancária.
               </p>
               
               <div className="mt-6 flex items-center">

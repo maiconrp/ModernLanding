@@ -12,11 +12,11 @@ export default function FinalCTA() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-['Montserrat'] mb-8">
-            <span className="text-[#C5A167]">Agora</span> a Decisão é Sua: <span className="block mt-2">Continuar com as Mesmas <span className="text-[#C5A167]">Dúvidas</span> ou Conquistar o <span className="text-[#C5A167]">Controle</span> da Sua Vida Financeira?</span>
+            <span className="text-[#C5A167]">Uma escolha</span> pela sua tranquilidade: <span className="block mt-2">Dar o próximo passo em direção a uma <span className="text-[#C5A167]">nova relação</span> com suas finanças</span>
           </h2>
           
           <p className="text-xl mb-8">
-            Enquanto você hesita, mais um mês se passa com as mesmas preocupações, as mesmas dívidas, as mesmas perguntas sem resposta. <span className="text-[#C5A167] font-bold">Não deixe que esse ciclo continue</span>.
+            Cada momento é uma oportunidade para começarmos uma nova história com nosso dinheiro. <span className="text-[#C5A167] font-bold">Você merece viver com mais clareza e menos preocupação</span> sobre suas finanças.
           </p>
           
           {/* Ebook cover and price */}
@@ -37,19 +37,19 @@ export default function FinalCTA() {
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-start">
                     <span className="text-[#C5A167] mr-3 mt-1"><FaCheckCircle /></span>
-                    <span>6 módulos completos com estratégias práticas</span>
+                    <span>6 módulos desenvolvidos para acompanhar sua jornada financeira</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-[#C5A167] mr-3 mt-1"><FaCheckCircle /></span>
-                    <span>3 bônus exclusivos (Planilha, Mini-Curso e Checklist)</span>
+                    <span>3 ferramentas complementares (Planilha personalizada, Mini-Curso e Checklist diário)</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-[#C5A167] mr-3 mt-1"><FaCheckCircle /></span>
-                    <span>Acesso imediato após pagamento</span>
+                    <span>Disponível para você começar imediatamente após a confirmação</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-[#C5A167] mr-3 mt-1"><FaCheckCircle /></span>
-                    <span>Garantia de satisfação de 30 dias</span>
+                    <span>30 dias para experimentar com tranquilidade nossa abordagem</span>
                   </li>
                 </ul>
                 
@@ -63,7 +63,7 @@ export default function FinalCTA() {
           </div>
           
           <Button className="pulse px-10 py-5 bg-[#C5A167] text-[#101010] rounded-lg font-bold uppercase tracking-wider transition transform hover:scale-105 hover:shadow-xl inline-block text-xl">
-            QUERO TRANSFORMAR MINHAS FINANÇAS HOJE!
+            QUERO COMEÇAR MINHA JORNADA DE TRANSFORMAÇÃO!
           </Button>
           
           <p className="mt-6 text-[#F5F5F5]/70 flex items-center justify-center">

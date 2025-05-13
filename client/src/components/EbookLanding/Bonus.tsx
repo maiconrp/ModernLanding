@@ -103,7 +103,7 @@ export default function Bonus() {
         
         <div className="mt-12 text-center">
           <Button className="pulse px-8 py-4 bg-[#C5A167] text-[#101010] rounded-lg font-bold uppercase tracking-wider transition transform hover:scale-105 hover:shadow-lg inline-block text-lg">
-            QUERO O EBOOK + TODOS OS BÔNUS AGORA!
+            QUERO INICIAR MINHA JORNADA COM TODOS OS BÔNUS!
           </Button>
           
           <p className="mt-4 text-[#F5F5F5]/70">

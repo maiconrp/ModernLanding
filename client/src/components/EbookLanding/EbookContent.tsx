@@ -8,7 +8,7 @@ export default function EbookContent() {
     {
       number: 1,
       title: "Entendendo o Caos – O Diagnóstico da Sua Vida Financeira",
-      description: "A resposta para \"O que é gestão financeira pessoal?\" aplicada a VOCÊ.",
+      description: "Vamos explorar juntos o que realmente importa na gestão financeira pessoal e como isso se aplica à sua realidade.",
       topics: [
         "Mapeamento completo da sua situação atual",
         "Identificação de padrões de comportamento financeiro",
@@ -18,7 +18,7 @@ export default function EbookContent() {
     {
       number: 2,
       title: "Seu Orçamento à Prova de Falhas",
-      description: "Aprenda 'como dividir o dinheiro para poupar' e 'como fazer um plano financeiro pessoal' que você consiga seguir.",
+      description: "Descubra maneiras de distribuir seu dinheiro que funcionem para você e como criar um plano financeiro personalizado que seja prazeroso de seguir.",
       topics: [
         "Desvendando o método 50/30/20 de forma prática",
         "Criando um orçamento flexível e realista",
@@ -28,7 +28,7 @@ export default function EbookContent() {
     {
       number: 3,
       title: "Operação Contas em Dia (O Fim das Dívidas e da Angústia)",
-      description: "Estratégias claras para 'como organizar as dívidas' e 'como colocar as contas em dia'.",
+      description: "Abordagens gentis e eficazes para reorganizar suas dívidas e estratégias práticas para trazer mais tranquilidade ao lidar com suas contas.",
       topics: [
         "Técnicas de negociação de dívidas que funcionam",
         "Métodos de priorização de pagamentos (bola de neve vs. avalanche)",
@@ -38,7 +38,7 @@ export default function EbookContent() {
     {
       number: 4,
       title: "Blindagem Financeira (Construindo Sua Reserva e Tranquilidade)",
-      description: "O caminho para 'mudar minha vida financeira' com segurança.",
+      description: "Como construir bases sólidas para uma relação mais tranquila e segura com suas finanças a longo prazo.",
       topics: [
         "Como construir uma reserva de emergência efetiva",
         "Estratégias de proteção contra imprevistos",
@@ -48,7 +48,7 @@ export default function EbookContent() {
     {
       number: 5,
       title: "Os Segredos de Quem Faz o Dinheiro Sobrar (e Investe!)",
-      description: "'O que estudar em finanças pessoais' para dar os primeiros passos em investimentos.",
+      description: "Os conceitos essenciais para iniciar sua jornada no mundo dos investimentos de maneira confortável e alinhada com seus objetivos pessoais.",
       topics: [
         "Fundamentos básicos de investimentos para iniciantes",
         "Como avaliar seu perfil de investidor",
