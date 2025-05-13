@@ -99,7 +99,7 @@ export default function EbookContent() {
         
         <div className="mt-12 text-center">
           <Button className="pulse cta-primary">
-            QUERO TER ACESSO AO EBOOK COMPLETO!
+            QUERO COMEÇAR MINHA TRANSFORMAÇÃO FINANCEIRA!
           </Button>
         </div>
       </div>

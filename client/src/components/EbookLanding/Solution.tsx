@@ -66,7 +66,7 @@ export default function Solution() {
             
             <div className="mt-8">
               <Button className="cta-primary">
-                QUERO TRANSFORMAR MINHAS FINANÇAS AGORA!
+                QUERO INICIAR MINHA JORNADA FINANCEIRA!
               </Button>
             </div>
           </motion.div>

@@ -26,7 +26,7 @@ export default function Benefits() {
               <h3 className="text-xl font-bold font-['Montserrat'] mb-4">CLAREZA ABSOLUTA</h3>
               
               <p className="text-[#F5F5F5]/90">
-                Entenda de uma vez por todas <span className="italic">'o que é gestão financeira'</span> e veja seu dinheiro trabalhando PARA você, não contra.
+                Descubra de forma simples e acessível o que realmente importa sobre gestão financeira e como fazer seu dinheiro trabalhar a seu favor, criando uma relação mais harmoniosa com suas finanças.
               </p>
             </div>
             
@@ -46,7 +46,7 @@ export default function Benefits() {
               <h3 className="text-xl font-bold font-['Montserrat'] mb-4">CONTAS EM DIA, SEM SUFOCO</h3>
               
               <p className="text-[#F5F5F5]/90">
-                Aprenda <span className="italic">'como colocar as contas em dia'</span> e <span className="italic">'como organizar as dívidas'</span>, mesmo se você acha que está no fundo do poço.
+                Encontre caminhos gentis e práticos para reorganizar suas contas e lidar com as dívidas de forma gradual e consistente, mesmo quando parecer que a situação está realmente desafiadora.
               </p>
             </div>
             
@@ -66,7 +66,7 @@ export default function Benefits() {
               <h3 className="text-xl font-bold font-['Montserrat'] mb-4">PLANO QUE FUNCIONA</h3>
               
               <p className="text-[#F5F5F5]/90">
-                Finalmente saiba <span className="italic">'como fazer um plano financeiro pessoal'</span> e <span className="italic">'como dividir o dinheiro para poupar'</span>, adaptado à SUA realidade.
+                Desenvolva seu próprio plano financeiro que realmente funcione no seu dia a dia e descubra maneiras de distribuir seus recursos que façam sentido para seus objetivos e estilo de vida único.
               </p>
             </div>
             
@@ -86,7 +86,7 @@ export default function Benefits() {
               <h3 className="text-xl font-bold font-['Montserrat'] mb-4">AUTONOMIA E CONHECIMENTO</h3>
               
               <p className="text-[#F5F5F5]/90">
-                Domine <span className="italic">'o que estudar em finanças pessoais'</span> de forma simples e aplicável, sem precisar ser um 'gestor financeiro' profissional.
+                Desenvolva sua autonomia financeira através de conhecimentos acessíveis e relevantes, sem precisar mergulhar em terminologias complexas ou se tornar um especialista para cuidar bem do seu próprio dinheiro.
               </p>
             </div>
             
@@ -106,7 +106,7 @@ export default function Benefits() {
               <h3 className="text-xl font-bold font-['Montserrat'] mb-4">MÉTODOS DESCOMPLICADOS</h3>
               
               <p className="text-[#F5F5F5]/90">
-                Descubra como a <span className="italic">'regra 50/30/20'</span> e outros <span className="italic">'5 pilares da educação financeira'</span> podem transformar seu orçamento.
+                Conheça abordagens como a "regra 50/30/20" e outros princípios fundamentais da educação financeira de forma prática e adaptada ao seu contexto, transformando conceitos em ferramentas que realmente funcionam no seu dia a dia.
               </p>
             </div>
             
@@ -125,7 +125,7 @@ export default function Benefits() {
                 <FaAward />
               </div>
               <p className="text-xl font-semibold">
-                Imagine acordar todos os dias com a <span className="text-[#C5A167]">TRANQUILIDADE</span> de quem sabe exatamente para onde seu dinheiro vai e como ele está trabalhando a seu favor.
+                Imagine como seria começar cada dia com a <span className="text-[#C5A167]">sensação de tranquilidade</span> de ter uma relação saudável com seu dinheiro, sabendo que ele está alinhado com seus valores e trabalhando como um aliado na sua vida.
               </p>
             </div>
           </div>
