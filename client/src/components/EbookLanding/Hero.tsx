@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import KiwifyCheckout from "./KiwifyCheckout";
 
 export default function Hero() {
   return (
@@ -22,11 +23,11 @@ export default function Hero() {
             </p>
             
             <div className="pt-4">
-              <Button 
+              <KiwifyCheckout 
+                productId="YOUR_KIWIFY_PRODUCT_ID"
+                buttonText="QUERO ENCONTRAR MEU CAMINHO FINANCEIRO!"
                 className="pulse px-8 py-4 bg-[#1E2B4F] text-[#F5F5F5] rounded-lg font-bold uppercase tracking-wider transition transform hover:scale-105 hover:shadow-lg text-center w-full sm:w-auto"
-              >
-                QUERO ENCONTRAR MEU CAMINHO FINANCEIRO!
-              </Button>
+              />
             </div>
           </motion.div>
           

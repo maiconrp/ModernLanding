@@ -1,6 +1,7 @@
 import { FaTable, FaVideo, FaCheckSquare } from "react-icons/fa";
 import SectionHeader from "@/components/ui/section-header";
 import { Button } from "@/components/ui/button";
+import KiwifyCheckout from "./KiwifyCheckout";
 
 export default function Bonus() {
   return (
@@ -102,13 +103,11 @@ export default function Bonus() {
         </div>
         
         <div className="mt-12 text-center">
-          <Button className="pulse px-8 py-4 bg-[#C5A167] text-[#101010] rounded-lg font-bold uppercase tracking-wider transition transform hover:scale-105 hover:shadow-lg inline-block text-lg">
-            QUERO INICIAR MINHA JORNADA COM TODOS OS BÔNUS!
-          </Button>
-          
-          <p className="mt-4 text-[#F5F5F5]/70">
-            Pagamento único e seguro via PIX, cartão de crédito ou boleto
-          </p>
+          <KiwifyCheckout 
+            productId="YOUR_KIWIFY_PRODUCT_ID"
+            buttonText="QUERO INICIAR MINHA JORNADA COM TODOS OS BÔNUS!"
+            className="pulse px-8 py-4 bg-[#C5A167] text-[#101010] rounded-lg font-bold uppercase tracking-wider transition transform hover:scale-105 hover:shadow-lg inline-block text-lg"
+          />
         </div>
       </div>
     </section>

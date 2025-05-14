@@ -1,5 +1,6 @@
 import { FaCheckCircle, FaLock } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
+import KiwifyCheckout from "./KiwifyCheckout";
 
 export default function FinalCTA() {
   return (
@@ -62,14 +63,11 @@ export default function FinalCTA() {
             </div>
           </div>
           
-          <Button className="pulse px-10 py-5 bg-[#C5A167] text-[#101010] rounded-lg font-bold uppercase tracking-wider transition transform hover:scale-105 hover:shadow-xl inline-block text-xl">
-            QUERO COMEÇAR MINHA JORNADA DE TRANSFORMAÇÃO!
-          </Button>
-          
-          <p className="mt-6 text-[#F5F5F5]/70 flex items-center justify-center">
-            <FaLock className="mr-2" />
-            Pagamento 100% seguro e criptografado
-          </p>
+          <KiwifyCheckout 
+            productId="YOUR_KIWIFY_PRODUCT_ID"
+            buttonText="QUERO COMEÇAR MINHA JORNADA DE TRANSFORMAÇÃO!"
+            className="pulse px-10 py-5 bg-[#C5A167] text-[#101010] rounded-lg font-bold uppercase tracking-wider transition transform hover:scale-105 hover:shadow-xl inline-block text-xl"
+          />
         </div>
       </div>
     </section>

@@ -2,6 +2,7 @@ import { FaCheckCircle, FaStar } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import SectionHeader from "@/components/ui/section-header";
 import { motion } from "framer-motion";
+import KiwifyCheckout from "./KiwifyCheckout";
 
 export default function Solution() {
   return (
@@ -65,9 +66,11 @@ export default function Solution() {
             </p>
             
             <div className="mt-8">
-              <Button className="cta-primary">
-                QUERO INICIAR MINHA JORNADA FINANCEIRA!
-              </Button>
+              <KiwifyCheckout 
+                productId="YOUR_KIWIFY_PRODUCT_ID"
+                buttonText="QUERO INICIAR MINHA JORNADA FINANCEIRA!"
+                className="cta-primary"
+              />
             </div>
           </motion.div>
         </div>
