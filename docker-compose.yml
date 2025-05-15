@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  traefik:
+    image: traefik:latest
+    command:
+      - --api.insecure=true
+      - --providers.docker=true
+      - --providers.docker.exposedbydefault=false
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8080:8080" # Traefik Dashboard (optional)
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  app:
+    build: .
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.app.rule=Host(`your_domain.com`)"
+      - "traefik.http.routers.app.entrypoints=http"
+      - "traefik.http.services.app.loadbalancer.server.port=3000" # Assuming your app runs on port 3000
