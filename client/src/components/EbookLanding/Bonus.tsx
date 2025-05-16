@@ -46,7 +46,7 @@ export default function Bonus() {
               </div>
               
               <div>
-                <h4 className="text-xl font-bold font-['Montserrat'] mb-2">BÔNUS #1: Planilha de Orçamento Inteligente</h4>
+                <h4 className="text-xl font-bold font-['Montserrat'] mb-2">BÔNUS #1: Planilha de CONTROLE DE FINANÇAS MENSAIS</h4>
                 <p className="mb-3">
                   Planilha pré-formatada que faz os cálculos automaticamente e ajuda você a visualizar seu progresso mês a mês.
                 </p>
@@ -63,29 +63,12 @@ export default function Bonus() {
               </div>
               
               <div>
-                <h4 className="text-xl font-bold font-['Montserrat'] mb-2">BÔNUS #2: Mini-Curso em Vídeo "Negociação de Dívidas"</h4>
+                <h4 className="text-xl font-bold font-['Montserrat'] mb-2">BÔNUS #2: Planilha de GASTOS ESTRATIFICADOS DIARIOS</h4>
                 <p className="mb-3">
                   3 vídeo-aulas práticas com scripts e técnicas de negociação que podem reduzir suas dívidas em até 60%.
                 </p>
                 <p className="text-lg font-semibold text-[#C5A167]">
                   Valor: R$87 <span className="text-[#F5F5F5]/80 text-sm">(GRÁTIS com o ebook)</span>
-                </p>
-              </div>
-            </div>
-            
-            {/* Bonus 3 */}
-            <div className="glass-gold rounded-xl p-6 flex items-start gap-4">
-              <div className="bg-[#C5A167]/20 rounded-full p-3 shrink-0">
-                <FaCheckSquare className="text-2xl text-[#C5A167]" />
-              </div>
-              
-              <div>
-                <h4 className="text-xl font-bold font-['Montserrat'] mb-2">BÔNUS #3: Checklist "21 Hábitos Financeiros Transformadores"</h4>
-                <p className="mb-3">
-                  Lista prática com hábitos diários, semanais e mensais que vão automatizar seu sucesso financeiro.
-                </p>
-                <p className="text-lg font-semibold text-[#C5A167]">
-                  Valor: R$47 <span className="text-[#F5F5F5]/80 text-sm">(GRÁTIS com o ebook)</span>
                 </p>
               </div>
             </div>
