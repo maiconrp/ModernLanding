@@ -23,6 +23,31 @@
   --destructive-foreground: 0 0% 98%;
   --ring: 218 42% 22%;
   --radius: 0.5rem;
+  --lt-color-gray-100: #f8f9fc;
+  --lt-color-gray-200: #f1f3f9;
+  --lt-color-gray-300: #dee3ed;
+  --lt-color-gray-400: #c2c9d6;
+  --lt-color-gray-500: #8f96a3;
+  --lt-color-gray-600: #5e636e;
+  --lt-color-gray-700: #2f3237;
+  --lt-color-gray-800: #1d1e20;
+  --lt-color-gray-900: #111213;
+}
+
+/* Estilos padrão para o body (sem os paddings grandes) */
+body {
+  /* Seus outros estilos de body aqui, por exemplo: */
+  margin: 0;
+  font-family: sans-serif;
+  /* Nenhum padding horizontal grande por padrão */
+}
+
+/* Aplicar paddings apenas em telas maiores (ex: a partir de 1024px) */
+@media (min-width: 1024px) { /* Você pode ajustar este valor */
+  body {
+    padding-right: 9rem;
+    padding-left: 9rem;
+  }
 }
 
 /* Glass effects */
@@ -80,19 +105,239 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-['Montserrat'] font-bold;
   }
-}
 
+  button {
+ padding: 1rem 2rem; /* Basic padding */
+ text-align: center; /* Basic text alignment */
+  }
+}
 @layer components {
   .gradient-bg {
     @apply bg-gradient-to-b from-[#101010] to-[rgba(30,43,79,0.5)];
   }
 
   .cta-primary {
-    @apply px-8 py-4 bg-[#1E2B4F] text-[#F5F5F5] rounded-lg font-bold uppercase tracking-wider transition transform hover:scale-105 hover:shadow-lg text-center;
+    @apply bg-[#1E2B4F] text-[#F5F5F5] rounded-lg font-bold uppercase tracking-wider transition transform hover:scale-105 hover:shadow-lg; /* Removed text-center as it's added below */
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    -webkit-tap-highlight-color: transparent;
+    --lt-shadowDefault: 0 2px 6px -1px rgba(0, 0, 0, 0.16), 0 1px 4px -1px rgba(0, 0, 0, 0.04);
+    --lt-shadowActive: 0 0 8px -2px rgba(0, 0, 0, 0.1), 0 6px 20px -3px rgba(0, 0, 0, 0.2);
+    --lt-color-white: #fff !important;
+    --lt-color-black: #111213 !important;
+    --lt-color-transparent: rgba(255, 255, 255, 0) !important;
+    --lt-color-background-light: var(--lt-color-gray-100) !important;
+    --lt-color-background-default: var(--lt-color-gray-200) !important;
+    --lt-color-background-dark: var(--lt-color-gray-300) !important;
+    --lt-color-border-light: var(--lt-color-gray-200) !important;
+    --lt-color-border-default: var(--lt-color-gray-300) !important;
+    --lt-color-border-dark: var(--lt-color-gray-400) !important;
+    --lt-color-text-very-light: var(--lt-color-gray-500) !important;
+    --lt-color-text-light: var(--lt-color-gray-600) !important;
+    --lt-color-text-default: var(--lt-color-gray-700) !important;
+    --lt-color-text-dark: var(--lt-color-gray-800) !important;
+    --lt-color-overlay-default: #fff !important;
+    --lt-color-overlay-dark: #fff !important;
+    --lt-color-overlay-transparent: rgba(0, 0, 0, 0.1) !important;
+    --lt-shadow-website-overlay: 0 0 7px 0 rgba(0, 0, 0, 0.3) !important;
+    -webkit-font-smoothing: antialiased;
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: hsl(var(--border));
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    margin: 0;
+    -webkit-appearance: button;
+    cursor: pointer;
+    /* transform already handled by @apply */
+    --tw-bg-opacity: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    --tw-text-opacity: 1;
+    padding: 1rem 2rem; /* Garante o padding mesmo com as classes */
+    text-align: center; /* Garante a centralização mesmo com as classes */
+    box-shadow: 0 0 10px rgba(197, 161, 103, 0); /* Sombra inicial transparente para o glow */
+    transition: all 0.3s ease-in-out; /* Transição para o hover */
+ display: inline-flex;
+ height: 2.5rem;
+ align-items: center;
+ justify-content: center;
+ gap: 0.5rem;
+ white-space: nowrap;
+ border-radius: calc(var(--radius) - 2px);
+ font-size: 0.875rem;
+ line-height: 1.25rem;
+ font-weight: 500;
+ color: hsl(var(--primary-foreground));
+    --tw-ring-offset-color: hsl(var(--background));
+ transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-duration: 150ms;
+ animation: pulse 2s infinite;
+ background: hsl(var(--accent));
   }
 
   .cta-secondary {
-    @apply px-8 py-4 bg-[#C5A167] text-[#101010] rounded-lg font-bold uppercase tracking-wider transition transform hover:scale-105 hover:shadow-lg text-center;
+    @apply bg-[#C5A167] text-[#101010] rounded-lg font-bold uppercase tracking-wider transition transform hover:scale-105 hover:shadow-lg; /* Removed text-center as it's added below */
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    -webkit-tap-highlight-color: transparent;
+    --lt-shadowDefault: 0 2px 6px -1px rgba(0, 0, 0, 0.16), 0 1px 4px -1px rgba(0, 0, 0, 0.04);
+    --lt-shadowActive: 0 0 8px -2px rgba(0, 0, 0, 0.1), 0 6px 20px -3px rgba(0, 0, 0, 0.2);
+    --lt-color-white: #fff !important;
+    --lt-color-black: #111213 !important;
+    --lt-color-transparent: rgba(255, 255, 255, 0) !important;
+    --lt-color-background-light: var(--lt-color-gray-100) !important;
+    --lt-color-background-default: var(--lt-color-gray-200) !important;
+    --lt-color-background-dark: var(--lt-color-gray-300) !important;
+    --lt-color-border-light: var(--lt-color-gray-200) !important;
+    --lt-color-border-default: var(--lt-color-gray-300) !important;
+    --lt-color-border-dark: var(--lt-color-gray-400) !important;
+    --lt-color-text-very-light: var(--lt-color-gray-500) !important;
+    --lt-color-text-light: var(--lt-color-gray-600) !important;
+    --lt-color-text-default: var(--lt-color-gray-700) !important;
+    --lt-color-text-dark: var(--lt-color-gray-800) !important;
+    --lt-color-overlay-default: #fff !important;
+    --lt-color-overlay-dark: #fff !important;
+    --lt-color-overlay-transparent: rgba(0, 0, 0, 0.1) !important;
+    --lt-shadow-website-overlay: 0 0 7px 0 rgba(0, 0, 0, 0.3) !important;
+    -webkit-font-smoothing: antialiased;
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: hsl(var(--border));
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    margin: 0;
+    -webkit-appearance: button;
+    cursor: pointer;
+    /* transform already handled by @apply */
+    --tw-bg-opacity: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    --tw-text-opacity: 1;
+    padding: 1rem 2rem; /* Garante o padding mesmo com as classes */
+    text-align: center; /* Garante a centralização mesmo com as classes */
+    box-shadow: 0 0 10px rgba(197, 161, 103, 0); /* Sombra inicial transparente para o glow */
+    transition: all 0.3s ease-in-out; /* Transição para o hover */
+    display: inline-flex;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+    border-radius: calc(var(--radius) - 2px);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color: hsl(var(--secondary-foreground)); /* Adjusted text color for secondary button */
+    --tw-ring-offset-color: hsl(var(--background));
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    animation: pulse 2s infinite;
+    background: hsl(var(--secondary)); /* Adjusted background for secondary button */
+  }
+  .cta-primary:hover,
+  .cta-secondary:hover {
+    background-color: var(--secondary); /* Altera o fundo para a cor secundária no hover */
+    color: var(--secondary-foreground); /* Altera a cor do texto no hover */
+    box-shadow: 0 0 20px rgba(197, 161, 103, 0.6); /* Efeito de glow no hover */
   }
 }
 
@@ -112,4 +357,17 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #C5A167;
+}
+
+/* Styles for specific buttons */
+#solution > div.container.mx-auto.px-4.relative.z-10 > div > div.w-full.lg\:w-3\/5.space-y-6 > div > div > button,
+#ebook-content > div > div.mt-12.text-center > button,
+#bonus > div > div.mt-12.text-center > div > button,
+#final-cta > div.container.mx-auto.px-4.relative.z-10 > div > div.kiwify-checkout-container > button {
+  background: hsl(var(--accent));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* Or simply padding: 0.5rem 1rem; */
 }

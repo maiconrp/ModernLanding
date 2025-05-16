@@ -2,71 +2,41 @@ import { FaAngleRight } from "react-icons/fa";
 import SectionHeader from "@/components/ui/section-header";
 import { Button } from "@/components/ui/button";
 
-export default function EbookContent() {
-  // Module content data structure
-  const modules = [
-    {
-      number: 1,
-      title: "Entendendo o Caos – O Diagnóstico da Sua Vida Financeira",
-      description: "Vamos explorar juntos o que realmente importa na gestão financeira pessoal e como isso se aplica à sua realidade.",
-      topics: [
-        "Mapeamento completo da sua situação atual",
-        "Identificação de padrões de comportamento financeiro",
-        "Ferramentas de diagnóstico simplificadas"
-      ]
-    },
-    {
-      number: 2,
-      title: "Seu Orçamento à Prova de Falhas",
-      description: "Descubra maneiras de distribuir seu dinheiro que funcionem para você e como criar um plano financeiro personalizado que seja prazeroso de seguir.",
-      topics: [
-        "Desvendando o método 50/30/20 de forma prática",
-        "Criando um orçamento flexível e realista",
-        "Ferramentas simples para acompanhamento diário"
-      ]
-    },
-    {
-      number: 3,
-      title: "Operação Contas em Dia (O Fim das Dívidas e da Angústia)",
-      description: "Abordagens gentis e eficazes para reorganizar suas dívidas e estratégias práticas para trazer mais tranquilidade ao lidar com suas contas.",
-      topics: [
-        "Técnicas de negociação de dívidas que funcionam",
-        "Métodos de priorização de pagamentos (bola de neve vs. avalanche)",
-        "Como evitar recair no ciclo de endividamento"
-      ]
-    },
-    {
-      number: 4,
-      title: "Blindagem Financeira (Construindo Sua Reserva e Tranquilidade)",
-      description: "Como construir bases sólidas para uma relação mais tranquila e segura com suas finanças a longo prazo.",
-      topics: [
-        "Como construir uma reserva de emergência efetiva",
-        "Estratégias de proteção contra imprevistos",
-        "Planejamento para objetivos de curto e médio prazo"
-      ]
-    },
-    {
-      number: 5,
-      title: "Os Segredos de Quem Faz o Dinheiro Sobrar (e Investe!)",
-      description: "Os conceitos essenciais para iniciar sua jornada no mundo dos investimentos de maneira confortável e alinhada com seus objetivos pessoais.",
-      topics: [
-        "Fundamentos básicos de investimentos para iniciantes",
-        "Como avaliar seu perfil de investidor",
-        "Por onde começar sem complexidades"
-      ]
-    },
-    {
-      number: 6,
-      title: "Os Pilares da Educação Financeira na Prática",
-      description: "Vamos explorar juntos os princípios fundamentais da educação e gestão financeira de uma forma acessível e aplicável ao seu dia a dia.",
-      topics: [
-        "Hábitos diários que transformam sua relação com dinheiro",
-        "Como manter-se motivado em sua jornada financeira",
-        "Criando seu legado financeiro para o futuro"
-      ]
-    }
-  ];
+// Module content data structure
+const modules = [
+  {
+    number: 1,
+    title: '<span class="text-[#C5A167]">Módulo 1:</span> Onde você está? Seu mapa financeiro sem complicação',
+    description: "Comece sua jornada descobrindo seu ponto de partida. Vamos te ajudar a mapear suas receitas, despesas, dívidas e patrimônio de um jeito simples, pra você ter a clareza que precisa."
+  },
+  {
+    number: 2,
+    title: '<span class="text-[#C5A167]">Módulo 2:</span> Seu orçamento na vida real: Um plano que funciona pra você',
+    description: "Chega de orçamento engessado! Aprenda a distribuir seu dinheiro de forma inteligente com a regra 50-30-20 adaptada pra sua realidade, criando um plano que te dê liberdade e tranquilidade."
+  },
+  {
+    number: 3,
+    title: '<span class="text-[#C5A167]">Módulo 3:</span> Diga adeus às dívidas: O caminho leve para quitar o que te tira o sono',
+    description: "Eliminar dívidas parece impossível? A gente te mostra o passo a passo pra listar tudo, negociar com confiança e priorizar os pagamentos pra você respirar aliviado e retomar o controle."
+  },
+  {
+    number: 4,
+    title: '<span class="text-[#C5A167]">Módulo 4:</span> Seu escudo financeiro: Construindo a reserva que te dá paz',
+    description: "Crie sua rede de segurança! Descubra por que a poupança não é a melhor opção e onde guardar sua reserva de emergência para ter a tranquilidade de que imprevistos não vão te derrubar."
+  },
+  {
+    number: 5,
+    title: '<span class="text-[#C5A167]">Módulo 5:</span> Dinheiro trabalhando pra você: Seus primeiros passos nos investimentos',
+    description: "Deixe o medo de lado! Entenda os conceitos básicos de investimento de um jeito simples, descubra seu perfil e saiba por onde começar a multiplicar seu dinheiro sem complicação."
+  },
+  {
+    number: 6,
+    title: '<span class="text-[#C5A167]">Módulo 6:</span> Sua vida financeira a longo prazo: Construindo um futuro tranquilo',
+    description: "Vá além do básico! Descubra hábitos poderosos pra manter suas finanças saudáveis a longo prazo, revise seu planejamento e construa o futuro próspero que você sempre quis."
+  }
+];
 
+export default function EbookContent() {
   return (
     <section id="ebook-content" className="py-20 relative">
       <div className="container mx-auto px-4">
@@ -74,29 +44,19 @@ export default function EbookContent() {
           Por Dentro do Guia <span className="text-[#C5A167]">'Domine Suas Finanças'</span>: <span className="block mt-2">As Respostas Práticas Que Você Precisa Para Cada Desafio</span>
         </SectionHeader>
         
+        {/* Simplified grid for modules - Tailwind handles the flow */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-          {/* First row of modules */}
-          <div className="space-y-8">
-            {modules.slice(0, 2).map((module) => (
-              <ModuleCard key={module.number} module={module} />
-            ))}
-          </div>
-          
-          {/* Second row of modules */}
-          <div className="space-y-8">
-            {modules.slice(2, 4).map((module) => (
-              <ModuleCard key={module.number} module={module} />
-            ))}
-          </div>
-        </div>
-        
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Third row of modules */}
-          {modules.slice(4, 6).map((module) => (
+          {modules.map((module) => (
             <ModuleCard key={module.number} module={module} />
           ))}
         </div>
         
+        {/* List of module titles */}
+        <div className="mt-12">
+          <h3 className="text-2xl font-bold font-['Montserrat'] mb-6 text-center">Todos os Módulos do Guia:</h3>
+          
+        </div>
+
         <div className="mt-12 text-center">
           <Button className="pulse cta-primary">
             QUERO COMEÇAR MINHA TRANSFORMAÇÃO FINANCEIRA!
@@ -113,7 +73,6 @@ interface ModuleProps {
     number: number;
     title: string;
     description: string;
-    topics: string[];
   };
 }
 
@@ -126,19 +85,14 @@ function ModuleCard({ module }: ModuleProps) {
         </div>
         
         <div>
-          <h3 className="text-xl font-bold font-['Montserrat'] mb-2">{module.title}</h3>
+          {/* Use dangerouslySetInnerHTML for the title as it contains HTML */}
+          <h3 
+            className="text-xl font-bold font-['Montserrat'] mb-2"
+            dangerouslySetInnerHTML={{ __html: module.title }}
+          />
           <p className="text-[#F5F5F5]/80">
             {module.description}
           </p>
-          
-          <ul className="mt-4 space-y-2">
-            {module.topics.map((topic, index) => (
-              <li key={index} className="flex items-start">
-                <span className="text-[#C5A167] mr-2 mt-1"><FaAngleRight /></span>
-                <span>{topic}</span>
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
     </div>

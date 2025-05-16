@@ -27,7 +27,7 @@ export default function Testimonials() {
     <section id="testimonials" className="py-20 bg-gradient-to-b from-[#101010]/70 to-[#101010] relative">
       <div className="container mx-auto px-4">
         <SectionHeader>
-          O Que Dizem Quem Já <span className="text-[#C5A167]">Transformou Suas Finanças</span> Com Nosso Método
+          Veja o que <span className="text-[#C5A167]">pessoas reais</span> conquistaram com o <span className="text-[#C5A167]">Domine Suas Finanças</span>
         </SectionHeader>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

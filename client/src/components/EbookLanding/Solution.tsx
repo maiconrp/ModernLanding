@@ -58,11 +58,11 @@ export default function Solution() {
             </h2>
             
             <p className="text-lg leading-relaxed">
-              Nós entendemos aquela busca incessante por respostas sobre como começar a organizar suas finanças ou aprender sobre dinheiro de forma objetiva. Foi pensando nisso que criamos o ebook <span className="font-bold">Domine Suas Finanças</span> – para ser um <span className="text-[#C5A167] font-bold">companheiro de jornada</span> que realmente entende suas necessidades.
+              A gente sabe que buscar respostas sobre como colocar a vida financeira em ordem pode ser cansativo. Por isso, criamos o ebook <span className="font-bold">Domine Suas Finanças</span> pensando em você: um verdadeiro <span className="text-[#C5A167] font-bold">companheiro de jornada</span> feito pra quem busca clareza e um caminho prático pra lidar melhor com o dinheiro.
             </p>
             
             <p className="text-lg leading-relaxed">
-              Transformamos conhecimentos financeiros complexos em um caminho <span className="font-bold">acessível</span> e <span className="font-bold">prático</span> para você. Aqui você encontrará maneiras de desenvolver uma gestão financeira que se adapte à sua vida real e técnicas para reorganizar suas finanças com tranquilidade e confiança.
+              Dentro dele, você vai encontrar tudo o que precisa pra transformar o jeito que lida com as finanças, sem complicação. Traduzimos o que parece difícil em um passo a passo acessível pra você organizar suas contas, entender pra onde seu dinheiro tá indo e construir um futuro com muito mais tranquilidade e confiança.
             </p>
             
             <div className="mt-8">

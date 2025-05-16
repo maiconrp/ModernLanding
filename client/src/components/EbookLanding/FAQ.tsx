@@ -12,23 +12,23 @@ export default function FAQ() {
   const faqItems = [
     {
       question: "Preciso ter conhecimento prévio em finanças?",
-      answer: "Não! O ebook foi escrito especialmente para quem está começando. Explicamos todos os conceitos financeiros de forma simples e direta, sem jargões complicados. Você vai evoluir do básico ao avançado de forma gradual e natural."
+      answer: "Não se preocupe com isso! Criamos o ebook pensando justamente em quem está começando e quer descomplicar. Explicamos tudo de forma super simples e direta, sem enrolação ou palavras difíceis. Você vai pegar o jeito no seu tempo, evoluindo do básico até se sentir mais confiante."
     },
     {
       question: "Em quanto tempo verei resultados?",
-      answer: "A maioria dos nossos leitores relata uma melhora significativa na organização financeira já nos primeiros 30 dias. Para resultados como quitação de dívidas e criação de reserva de emergência, o tempo varia conforme sua situação atual, mas nosso método acelera esse processo consideravelmente."
+      answer: "Olha, a gente vê a maioria das pessoas sentindo uma boa diferença na organização logo no primeiro mês! Pra resultados maiores, como quitar dívidas ou montar sua reserva, o tempo varia pra cada um. Mas pode ter certeza: nosso método foi feito pra te ajudar a chegar lá mais rápido e com mais segurança."
     },
     {
       question: "Funciona para qualquer faixa de renda?",
-      answer: "Sim! Nosso método é adaptável para qualquer realidade financeira. Temos exemplos de sucesso desde pessoas que ganham um salário mínimo até profissionais com alta renda. O segredo está na aplicação dos princípios, independentemente do valor absoluto."
+      answer: "Sim, com certeza! A beleza do nosso método é que ele se adapta à sua realidade, não importa quanto você ganha. O que realmente faz a diferença é aplicar os princípios que ensinamos. Já vimos histórias de sucesso com os mais diversos orçamentos, e a sua pode ser a próxima!"
     },
     {
       question: "Como recebo o ebook e os bônus?",
-      answer: "Imediatamente após a confirmação do pagamento, você receberá um e-mail com os links para baixar o ebook em formato PDF e acessar todos os bônus. O material pode ser lido em qualquer dispositivo: computador, tablet ou celular."
+      answer: "Assim que o pagamento for confirmado (geralmente na hora!), você vai receber um e-mail especial nosso. Nele, terão os links pra baixar o ebook em PDF e acessar na mesma hora todos os bônus incríveis que preparamos. Dá pra ler e usar em qualquer lugar: no seu computador, tablet ou celular. Facinho, facinho!"
     },
     {
       question: "Tem garantia de satisfação?",
-      answer: "Absolutamente! Oferecemos garantia de 30 dias. Se você seguir o método e não ficar satisfeito com os resultados, devolvemos 100% do seu investimento, sem perguntas."
+      answer: "Completamente! Temos tanta confiança no nosso método que te damos 30 dias pra experimentar. Se você seguir o passo a passo direitinho e sentir que não era bem o que esperava, a gente devolve 100% do seu investimento, sem letrinhas miúdas ou perguntas chatas. Risco zero pra você!"
     }
   ];
 

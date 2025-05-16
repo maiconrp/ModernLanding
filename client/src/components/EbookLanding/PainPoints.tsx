@@ -23,7 +23,7 @@ export default function PainPoints() {
             </div>
             <h3 className="text-xl font-bold font-['Montserrat'] mb-4 text-[#C5A167]">SENSAÇÃO DE CONFUSÃO?</h3>
             <p className="text-[#F5F5F5]/90 flex-grow">
-              Às vezes, só de ouvir falar sobre gestão financeira pessoal já dá um nó na cabeça, não é? Entendemos como é difícil buscar informações sobre o que realmente precisamos saber sobre nosso dinheiro e acabar se sentindo ainda mais perdido com tantas opções e conselhos por aí.
+              Sabe quando você pensa em finanças e já dá aquele nó na cabeça? É super comum se sentir perdido com tanta informação e conselho por aí. A gente entende como é difícil saber por onde começar e o que realmente funciona para o seu dinheiro.
             </p>
             
             {/* A person looking confused while staring at financial documents */}
@@ -43,7 +43,7 @@ export default function PainPoints() {
             </div>
             <h3 className="text-xl font-bold font-['Montserrat'] mb-4 text-[#C5A167]">DESAFIO COM AS CONTAS?</h3>
             <p className="text-[#F5F5F5]/90 flex-grow">
-              Aquela preocupação sobre como finalmente colocar as contas em dia que aparece bem na hora de dormir... Sabemos como é frustrante. E quando nos perguntamos se é possível organizar nossas dívidas mesmo estando no vermelho, a tarefa parece ainda mais desafiadora.
+              Aquela preocupação com as contas que não saem da cabeça, especialmente na hora de dormir... É frustrante se sentir preso em um ciclo de dívidas e se perguntar se é mesmo possível colocar a vida financeira nos trilhos, mesmo "no vermelho".
             </p>
             
             {/* A person looking stressed while checking finances on laptop */}
@@ -63,7 +63,7 @@ export default function PainPoints() {
             </div>
             <h3 className="text-xl font-bold font-['Montserrat'] mb-4 text-[#C5A167]">TENTATIVAS QUE NÃO DERAM CERTO?</h3>
             <p className="text-[#F5F5F5]/90 flex-grow">
-              Já teve aquele momento de determinação em que você decidiu organizar suas finanças de uma vez por todas? Talvez até tenha começado planilhas ou tentado aplicar a regra 50/30/20, mas sentiu que esses métodos não se encaixavam perfeitamente na sua rotina?
+              Você já tentou organizar suas finanças com planilhas, regras e métodos, mas sentiu que nada se encaixava na sua vida? É desanimador investir tempo e energia e não ver os resultados, ou perceber que a teoria parece distante da sua rotina.
             </p>
             
             {/* A person looking frustrated with financial paperwork */}
@@ -85,7 +85,7 @@ export default function PainPoints() {
             </div>
             <h3 className="text-xl font-bold font-['Montserrat'] mb-4 text-[#C5A167]">BUSCANDO UM CAMINHO PRÁTICO?</h3>
             <p className="text-[#F5F5F5]/90 flex-grow">
-              É natural ficar com a cabeça cheia de questões sobre qual seria o melhor caminho para criar um plano financeiro efetivo, como distribuir o salário para ter uma sobra no fim do mês ou como aprender sobre finanças sem grandes investimentos. E às vezes parece que as respostas são mais complicadas do que deveriam ser, não é?
+              Com tantas opções e informações, é natural se perguntar: qual o jeito mais simples e eficaz de organizar meu dinheiro? Como fazer o salário render e ainda sobrar? E como começar a cuidar das finanças sem precisar virar especialista? A gente sabe que a busca por respostas claras e práticas pode ser cansativa.
             </p>
             
             {/* A person looking overwhelmed with financial planning */}
@@ -105,7 +105,7 @@ export default function PainPoints() {
                 <FaLightbulb />
               </div>
               <p className="text-xl md:text-2xl font-semibold font-['Nunito']">
-                Se você se identificou com essas situações, queremos que você <span className="uppercase text-[#C5A167] font-bold">SAIBA</span>: Existe um caminho mais claro e acessível do que você imagina, e estamos aqui para percorrê-lo com você.
+                Se você se identificou com o que leu, queremos te dizer algo importante: existe sim um jeito mais leve e claro de lidar com tudo isso! Um caminho acessível que faz sentido para a sua realidade, e a gente tá aqui pra te mostrar, passo a passo.
               </p>
             </div>
           </div>

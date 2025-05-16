@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import KiwifyCheckout from "./KiwifyCheckout";
+import CapaEbook from '@/assets/images/capa_page-0001.jpg';
 
 export default function Hero() {
   return (
     <section id="hero" className="relative min-h-screen flex items-center pt-10 pb-20 overflow-hidden">
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-8 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Hero Content */}
           <motion.div 
@@ -15,11 +16,15 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold font-['Montserrat'] leading-tight text-[#F5F5F5]">
-              A relação com o <span className="text-[#C5A167]">seu dinheiro</span> pode ser mais <span className="text-[#C5A167]">leve e tranquila</span> <span className="block mt-2">É hora de respirar aliviado ao pensar nas suas finanças</span>
+              Chega de nó na cabeça com suas finanças
             </h1>
+
+            <p className="text-xl md:text-2xl font-medium font-['Montserrat'] text-[#F5F5F5]/90 mt-4 lg:mt-6">
+  Conquiste a <span className="text-[#C5A167]">paz financeira</span> que você tanto busca.
+</p>
             
             <p className="text-lg md:text-xl font-['Nunito'] text-[#F5F5F5]/80 leading-relaxed">
-              Sabe aquela sensação de que os pensamentos sobre como organizar melhor as finanças, colocar as contas em ordem ou construir uma vida financeira mais tranquila <span className="text-[#C5A167] font-bold">parecem não dar trégua</span>? Estamos aqui para ajudar. A Idealize Gestão caminha com você, passo a passo, nessa jornada.
+            Sente que sua vida financeira é uma montanha-russa de preocupações? Entendemos. A Idealize Gestão caminha com você, passo a passo, para uma relação mais leve e tranquila com seu dinheiro.
             </p>
             
             <div className="pt-4">
@@ -41,8 +46,8 @@ export default function Hero() {
             <div className="relative w-full max-w-md transform rotate-3 hover:rotate-0 transition-transform duration-500">
               <div className="absolute -inset-1 bg-gradient-to-r from-[#1E2B4F] to-[#C5A167] opacity-20 blur-lg rounded-lg"></div>
               <img 
-                src="https://images.unsplash.com/photo-1610116306796-6fea9f4fae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="Ebook Domine Suas Finanças" 
+                src={CapaEbook}
+                alt="Capa do Ebook Domine Suas Finanças" 
                 className="relative w-full h-auto rounded-lg shadow-2xl border border-[#C5A167]/20"
               />
               

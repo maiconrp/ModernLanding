@@ -4,7 +4,7 @@ import SectionHeader from "@/components/ui/section-header";
 export default function Authority() {
   return (
     <section id="authority" className="py-20 relative">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8 relative z-10">
         <SectionHeader>
           Quem Está Por Trás Deste <span className="text-[#C5A167]">Método Transformador</span>?
         </SectionHeader>
@@ -28,21 +28,21 @@ export default function Authority() {
             <div className="glass rounded-xl p-8">
               <h3 className="text-2xl font-bold font-['Montserrat'] mb-6 flex items-center">
                 <span className="text-[#C5A167] mr-3">
-                  <FaCertificate />
+ <FaCertificate />
                 </span>
-                Idealize Gestão
+ Idealize Gestão: Nossa paixão é ver você prosperar.
               </h3>
               
               <p className="text-lg leading-relaxed mb-6">
-                Ao longo de mais de 8 anos caminhando ao lado de pessoas e empresas em suas jornadas financeiras, desenvolvemos na Idealize Gestão uma forma única de traduzir conceitos que parecem complexos em estratégias que realmente fazem sentido no dia a dia.
+ Olá! Somos a Idealize Gestão, e nossa jornada começou com a paixão de transformar a relação das pessoas com o dinheiro. Fundada por Breno Baleeiro, com mais de 8 anos de experiência, dedicamos nosso trabalho a descomplicar as finanças e mostrar que é possível ter uma vida financeira mais leve e próspera.
               </p>
               
               <p className="text-lg leading-relaxed mb-6">
-                Nossa equipe já teve o privilégio de acompanhar mais de 1.500 pessoas em sua transformação de uma situação de preocupação financeira para uma relação mais saudável e próspera com o dinheiro.
+ Já tivemos o privilégio de caminhar ao lado de mais de 1.500 pessoas e empresas, ajudando-as a sair do sufoco, organizar as contas e construir um futuro mais tranquilo. Nossa maior alegria é ver a transformação acontecendo na prática, dia após dia.
               </p>
               
               <p className="text-lg leading-relaxed">
-                O que nos diferencia é nossa abordagem personalizada – acreditamos que cada pessoa tem uma história única com o dinheiro e merece encontrar seu próprio caminho de prosperidade, independentemente do valor em sua conta bancária.
+ Acreditamos que sua história com o dinheiro é única. Por isso, nossa abordagem vai além dos números: oferecemos um acompanhamento personalizado, com soluções que realmente se encaixam na sua vida. Queremos te apoiar em cada passo, transformando desafios em oportunidades de crescimento, porque para a Idealize, transformar ideias em realidade é a nossa expertise e a nossa paixão.
               </p>
               
               <div className="mt-6 flex items-center">
