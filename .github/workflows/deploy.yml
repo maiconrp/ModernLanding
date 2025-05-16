@@ -3,7 +3,7 @@ name: Deploy to VPS
 on:
   push:
     branches:
-      - main # Ou 'master', ou a branch que você usa para produção
+      - main
 
 jobs:
   deploy:
@@ -11,51 +11,48 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4 # Sempre use a versão mais recente ou uma específica
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18' # Ou a versão do Node.js que seu projeto usa
-          cache: 'npm' # Ou 'yarn'
+          node-version: '18'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm install # Ou yarn install
+        run: npm install
 
       - name: Build project
-        run: npm run build # Ou yarn build
+        run: npm run build # Isso gera dist/public/index.html etc.
 
-      - name: Deploy to VPS
-        uses: appleboy/ssh-action@master # Ou uma versão específica como @v1.0.3
+      - name: Copy files to VPS via SCP
+        uses: appleboy/scp-action@master # Ou uma versão específica
         with:
           host: ${{ secrets.VPS_SSH_HOST }}
           username: ${{ secrets.VPS_SSH_USERNAME }}
           key: ${{ secrets.VPS_SSH_PRIVATE_KEY }}
-          port: 22 # Porta SSH padrão, ajuste se a sua for diferente
-          source: "dist/" # Pasta a ser copiada (o '/' no final copia o conteúdo)
-          target: "${{ secrets.VPS_TARGET_PATH }}/dist" # Onde copiar na VPS
-          # Limpa o diretório de destino antes de copiar para remover arquivos antigos
-          # CUIDADO: Isso remove TUDO no diretório de destino antes de copiar.
-          # Se VPS_TARGET_PATH é /var/www/ebook.gestolize.com.br,
-          # e source é "dist/", então target deveria ser ${{ secrets.VPS_TARGET_PATH }}/dist
-          # e o script abaixo precisa refletir isso.
-          # Vamos simplificar: source: "dist" (sem /) e target: ${{ secrets.VPS_TARGET_PATH }}
-          # Isso copiará a pasta 'dist' para dentro de /var/www/ebook.gestolize.com.br/
-          # resultando em /var/www/ebook.gestolize.com.br/dist/
-          #
-          # REVISADO para corresponder à sua estrutura Nginx:
-          # source: "dist" (a pasta 'dist' inteira)
-          # target: "${{ secrets.VPS_TARGET_PATH }}" (ex: /var/www/ebook.gestolize.com.br/)
-          # Assim, o resultado na VPS será /var/www/ebook.gestolize.com.br/dist/
-          #
-          # script_stop: true # Para garantir que o script rode após a cópia
+          port: 22
+          # Importante: fonte e destino baseados na saída do seu build
+          source: "dist/public/" # Copia o CONTEÚDO de dist/public
+          target: "${{ secrets.VPS_TARGET_PATH }}/dist" # Destino na VPS para ser /var/www/ebook.gestolize.com.br/dist
+          # Se VPS_TARGET_PATH é /var/www/ebook.gestolize.com.br
+          # E seu Nginx serve de /var/www/ebook.gestolize.com.br/dist
+          # Então o conteúdo de dist/public/ do runner deve ir para /var/www/ebook.gestolize.com.br/dist/ na VPS
+
+      - name: Execute commands on VPS
+        uses: appleboy/ssh-action@master # Ou uma versão específica
+        with:
+          host: ${{ secrets.VPS_SSH_HOST }}
+          username: ${{ secrets.VPS_SSH_USERNAME }}
+          key: ${{ secrets.VPS_SSH_PRIVATE_KEY }}
+          port: 22
           script: |
-            echo "Deployment files copied to ${{ secrets.VPS_TARGET_PATH }}/dist"
-            # Ajustar permissões após a cópia
-            # O caminho completo para a pasta dist na VPS será ${{ secrets.VPS_TARGET_PATH }}/dist
+            echo "--- Files should be copied to ${{ secrets.VPS_TARGET_PATH }}/dist ---"
+            ls -lath ${{ secrets.VPS_TARGET_PATH }}/dist/
+            echo "--- Changing permissions ---"
             sudo chown -R www-data:www-data ${{ secrets.VPS_TARGET_PATH }}/dist
             sudo find ${{ secrets.VPS_TARGET_PATH }}/dist -type d -exec chmod 755 {} \;
             sudo find ${{ secrets.VPS_TARGET_PATH }}/dist -type f -exec chmod 644 {} \;
-            # Reiniciar Nginx para aplicar as mudanças
+            echo "--- Restarting Nginx ---"
             sudo systemctl restart nginx
             echo "Nginx restarted. Deployment complete!"
