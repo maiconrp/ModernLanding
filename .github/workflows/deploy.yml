@@ -23,53 +23,26 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run build # Gera dist/public/index.html, dist/public/assets/, e dist/index.js (backend)
-        # Adicione um ls aqui para ver o que o build GEROU no runner
-      - name: List build output in runner
-        run: ls -R dist
+        run: |
+          npm run build
+          echo "--- Listing build output in runner (dist directory) ---"
+          ls -R dist
 
-      - name: Prepare deployment directory on VPS
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.VPS_SSH_HOST }}
-          username: ${{ secrets.VPS_SSH_USERNAME }}
-          key: ${{ secrets.VPS_SSH_PRIVATE_KEY }}
-          port: 22
-          script: |
-            FRONTEND_DEPLOY_DIR="${{ secrets.VPS_TARGET_PATH }}/dist"
-            FRONTEND_DEPLOY_DIR_OLD="${{ secrets.VPS_TARGET_PATH }}/dist_old_$(date +%s)" # Adiciona timestamp ao backup
-
-            echo "Preparing deployment directory: $FRONTEND_DEPLOY_DIR"
-            
-            if [ -d "$FRONTEND_DEPLOY_DIR_OLD" ]; then
-              echo "Removing very old backup directory (if any): ${{ secrets.VPS_TARGET_PATH }}/dist_old_*" # Limpa backups mais antigos
-              # sudo rm -rf "${{ secrets.VPS_TARGET_PATH }}/dist_old_" # CUIDADO com wildcard rm -rf
-            fi
-            
-            if [ -d "$FRONTEND_DEPLOY_DIR" ]; then
-              echo "Backing up current deployment: $FRONTEND_DEPLOY_DIR to $FRONTEND_DEPLOY_DIR_OLD"
-              sudo mv "$FRONTEND_DEPLOY_DIR" "$FRONTEND_DEPLOY_DIR_OLD"
-            fi
-            
-            echo "Creating new deployment directory: $FRONTEND_DEPLOY_DIR"
-            sudo mkdir -p "$FRONTEND_DEPLOY_DIR"
-            sudo chown ${{ secrets.VPS_SSH_USERNAME }}:${{ secrets.VPS_SSH_USERNAME }} "$FRONTEND_DEPLOY_DIR"
-            echo "Current content of parent BEFORE scp:"
-            ls -la ${{ secrets.VPS_TARGET_PATH }}/
-            echo "Deployment directory prepared."
-
-      - name: Copy frontend files to VPS via SCP
+      - name: Copy frontend files to VPS
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.VPS_SSH_HOST }}
           username: ${{ secrets.VPS_SSH_USERNAME }}
           key: ${{ secrets.VPS_SSH_PRIVATE_KEY }}
           port: 22
-          source: "dist/public/" # Copia o CONTEÚDO de dist/public do runner (frontend)
-          target: "${{ secrets.VPS_TARGET_PATH }}/dist" # Para /var/www/ebook.gestolize.com.br/dist na VPS
+          # COPIA O CONTEÚDO da pasta 'dist/public' do runner
+          # PARA DENTRO da pasta 'dist' no servidor.
+          source: "dist/public/*" 
+          target: "${{ secrets.VPS_TARGET_PATH }}/dist"
           overwrite: true 
+          # A scp-action DEVE criar o diretório de destino se não existir.
 
-      - name: Finalize deployment and restart Nginx
+      - name: Set permissions and restart Nginx
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.VPS_SSH_HOST }}
@@ -77,24 +50,30 @@ jobs:
           key: ${{ secrets.VPS_SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            FRONTEND_DEPLOY_DIR="${{ secrets.VPS_TARGET_PATH }}/dist"
+            # Este é o diretório que o Nginx está configurado para servir
+            NGINX_ROOT_DIR="${{ secrets.VPS_TARGET_PATH }}/dist"
 
-            echo "--- Content of parent AFTER scp ---"
-            ls -la ${{ secrets.VPS_TARGET_PATH }}/
-            echo "--- Files in $FRONTEND_DEPLOY_DIR after SCP ---"
-            ls -lath "$FRONTEND_DEPLOY_DIR"
-            echo "--- Detailed list of files in $FRONTEND_DEPLOY_DIR ---"
-            find "$FRONTEND_DEPLOY_DIR" -ls # Lista todos os arquivos e suas permissões detalhadamente
-            
-            echo "--- Changing permissions for Nginx ---"
-            sudo chown -R www-data:www-data "$FRONTEND_DEPLOY_DIR"
-            sudo find "$FRONTEND_DEPLOY_DIR" -type d -exec chmod 755 {} \;
-            sudo find "$FRONTEND_DEPLOY_DIR" -type f -exec chmod 644 {} \;
-            
-            echo "--- Listing permissions again for $FRONTEND_DEPLOY_DIR ---"
-            find "$FRONTEND_DEPLOY_DIR" -ls
+            echo "--- Verifying structure in $NGINX_ROOT_DIR after SCP ---"
+            if [ ! -d "$NGINX_ROOT_DIR" ]; then
+              echo "ERROR: $NGINX_ROOT_DIR does not exist or is not a directory!"
+              exit 1
+            fi
+            ls -la "$NGINX_ROOT_DIR"
+            find "$NGINX_ROOT_DIR" -ls
 
-            echo "--- Restarting Nginx ---"
+            if [ -f "$NGINX_ROOT_DIR/index.html" ]; then
+              echo "SUCCESS: index.html found directly in $NGINX_ROOT_DIR."
+            else
+              echo "ERROR: index.html NOT found directly in $NGINX_ROOT_DIR. Deployment likely incorrect."
+              # exit 1 # Descomente para falhar se a estrutura estiver errada
+            fi
+            
+            echo "Changing permissions for Nginx in $NGINX_ROOT_DIR..."
+            sudo chown -R www-data:www-data "$NGINX_ROOT_DIR"
+            sudo find "$NGINX_ROOT_DIR" -type d -exec chmod 755 {} \;
+            sudo find "$NGINX_ROOT_DIR" -type f -exec chmod 644 {} \;
+            
+            echo "Restarting Nginx..."
             sudo systemctl restart nginx
             NGINX_STATUS=$(sudo systemctl is-active nginx)
             echo "Nginx status after restart: $NGINX_STATUS"
@@ -103,4 +82,4 @@ jobs:
               sudo journalctl -u nginx -n 50 --no-pager
               exit 1
             fi
-            echo "Nginx restarted. Frontend deployment complete!"
+            echo "Nginx restarted. Deployment complete!"
