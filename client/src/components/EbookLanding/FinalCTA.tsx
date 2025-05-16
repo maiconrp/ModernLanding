@@ -66,11 +66,11 @@ export default function FinalCTA() {
           {/* Kiwify Checkout Button */}
           <KiwifyCheckout 
             productId="YOUR_KIWIFY_PRODUCT_ID"
-            buttonText="QUERO COMEÇAR MINHA JORNADA DE TRANSFORMAÇÃO!"
-            // Adjusted padding and added flex properties for centering
-            className="pulse px-6 py-4 md:px-8 md:py-5 bg-[#C5A167] text-[#101010] rounded-lg font-bold uppercase tracking-wider transition transform hover:scale-105 hover:shadow-xl inline-flex items-center justify-center text-lg md:text-xl text-center whitespace-normal break-words"
+            buttonText="QUERO COMEÇAR MINHA JORNADA DE TRANSFORMAÇÃO!" // Moved buttonText to attribute
+            // Adjusted padding, text wrapping, and added flex properties for centering
+            className="pulse px-8 py-5 md:px-10 md:py-6 bg-[#C5A167] text-[#101010] rounded-lg font-bold uppercase tracking-wider transition transform hover:scale-105 hover:shadow-xl inline-flex items-center justify-center text-lg md:text-xl text-center whitespace-normal break-words leading-tight"
           />
-          <p className="mt-4 text-sm text-[#F5F5F5]/70 flex items-center justify-center"> <span className="mr-2"><FaLock /></span> Pagamento 100% seguro processado pela Kiwify</p>
+          <p className="mt-6 text-sm text-[#F5F5F5]/70 flex items-center justify-center"> <span className="mr-2"><FaLock /></span> Pagamento 100% seguro processado pela Kiwify</p>
         </div>
       </div>
     </section>
