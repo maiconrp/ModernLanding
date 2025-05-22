@@ -4,11 +4,11 @@ import KiwifyCheckout from "./KiwifyCheckout";
 
 export default function FinalCTA() {
   // Valores para consistência (idealmente viriam de um contexto ou props se compartilhados)
-  const valorEbookOriginal = 197;
-  const valorBonus1PlanilhaMensal = 47; // Mesmo valor do componente Bonus.tsx
-  const valorBonus2PlanilhaDiaria = 47; // Mesmo valor do componente Bonus.tsx
+  const valorEbookOriginal = 117;
+  const valorBonus1PlanilhaMensal = 27; // Mesmo valor do componente Bonus.tsx
+  const valorBonus2PlanilhaDiaria = 27; // Mesmo valor do componente Bonus.tsx
   const valorTotalOriginalPacote = valorEbookOriginal + valorBonus1PlanilhaMensal + valorBonus2PlanilhaDiaria;
-  const precoPromocionalFinal = 97;
+  const precoPromocionalFinal = 47;
 
   return (
     <section id="final-cta" className="py-20 bg-gradient-to-b from-[#101010]/90 to-[#101010] relative">
@@ -82,9 +82,9 @@ export default function FinalCTA() {
 
           {/* Kiwify Checkout Button */}
           <KiwifyCheckout
-            productId="YOUR_KIWIFY_PRODUCT_ID" // LEMBRE-SE DE ATUALIZAR ESTE ID
+            productId="DnSlT4G" // LEMBRE-SE DE ATUALIZAR ESTE ID
             buttonText="QUERO MINHA TRANSFORMAÇÃO FINANCEIRA AGORA!"
-            className="pulse px-8 py-4 md:px-10 md:py-5 bg-[#C5A167] text-[#101010] rounded-lg font-bold uppercase tracking-wider transition transform hover:scale-105 hover:shadow-xl inline-flex items-center justify-center text-base md:text-lg text-center whitespace-normal break-words leading-tight"
+            className="pulse px-8 py-5 md:px-10 md:py-5 bg-[#C5A167] text-[#101010] rounded-lg font-bold uppercase tracking-wider transition transform hover:scale-105 hover:shadow-xl inline-flex items-center justify-center text-base md:text-lg text-center whitespace-normal break-words leading-tight w-full sm:w-auto mx-auto"
           />
           
         </div>

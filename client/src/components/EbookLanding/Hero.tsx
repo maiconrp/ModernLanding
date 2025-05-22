@@ -29,9 +29,9 @@ export default function Hero() {
             
             <div className="pt-4">
               <KiwifyCheckout 
-                productId="YOUR_KIWIFY_PRODUCT_ID"
+                productId="DnSlT4G"
                 buttonText="QUERO ENCONTRAR MEU CAMINHO FINANCEIRO!"
-                className="pulse px-8 py-4 bg-[#1E2B4F] text-[#F5F5F5] rounded-lg font-bold uppercase tracking-wider transition transform hover:scale-105 hover:shadow-lg text-center w-full sm:w-auto"
+                className="pulse px-8 py-5 bg-[#1E2B4F] text-[#F5F5F5] rounded-lg font-bold uppercase tracking-wider transition transform hover:scale-105 hover:shadow-lg text-center sm:w-auto whitespace-normal break-words"
               />
             </div>
           </motion.div>
@@ -53,8 +53,7 @@ export default function Hero() {
               
               {/* Price tag */}
               <div className="absolute -top-4 -right-4 bg-[#C5A167] text-[#101010] font-bold rounded-full p-4 shadow-lg transform rotate-12 hover:rotate-0 transition-transform duration-300">
-                <span className="text-xs uppercase block">Apenas</span>
-                <span className="text-xl">R$97</span>
+                <span className="text-xs">✨</span>
               </div>
             </div>
           </motion.div>

@@ -12,7 +12,7 @@ import GlassIcon from "@/components/ui/glass-icon";
 export default function Benefits() {
   return (
     <section id="benefits" className="py-20 bg-gradient-to-b from-[#101010]/70 to-[#101010] relative">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8">
         <SectionHeader>
           Deixe a <span className="text-[#C5A167]">Incerteza</span> Para Trás e Conquiste a <span className="text-[#C5A167]">Confiança</span> de Quem Sabe Para Onde Vai (e Como Chegar Lá!)
         </SectionHeader>

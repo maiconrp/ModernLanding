@@ -50,18 +50,13 @@ export default function EbookContent() {
             <ModuleCard key={module.number} module={module} />
           ))}
         </div>
-        
-        {/* List of module titles */}
-        <div className="mt-12">
-          <h3 className="text-2xl font-bold font-['Montserrat'] mb-6 text-center">Todos os Módulos do Guia:</h3>
-          
-        </div>
-
         <div className="mt-12 text-center">
-          <Button className="pulse cta-primary">
+          <Button className="pulse cta-primary w-full sm:w-auto mx-auto whitespace-normal break-words py-5">
             QUERO COMEÇAR MINHA TRANSFORMAÇÃO FINANCEIRA!
           </Button>
         </div>
+        
+        {/* List of module titles */}
       </div>
     </section>
   );

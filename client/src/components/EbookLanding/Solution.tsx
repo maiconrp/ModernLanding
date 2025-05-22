@@ -67,7 +67,7 @@ export default function Solution() {
             
             <div className="mt-8">
               <KiwifyCheckout 
-                productId="YOUR_KIWIFY_PRODUCT_ID"
+                productId="DnSlT4G"
                 buttonText="QUERO INICIAR MINHA JORNADA FINANCEIRA!"
                 className="cta-primary"
               />

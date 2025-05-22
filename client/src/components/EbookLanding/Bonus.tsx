@@ -5,10 +5,10 @@ import KiwifyCheckout from "./KiwifyCheckout";
 
 export default function Bonus() {
   // Definindo os valores dos bônus para fácil referência e cálculo
-  const valorEbookOriginal = 197;
-  const valorEbookPromocional = 97;
-  const valorBonus1PlanilhaMensal = 47; // Exemplo de valor, ajuste conforme sua estratégia
-  const valorBonus2PlanilhaDiaria = 47; // Exemplo de valor, ajuste conforme sua estratégia
+  const valorEbookOriginal = 117;
+  const valorEbookPromocional = 47;
+  const valorBonus1PlanilhaMensal = 27; // Exemplo de valor, ajuste conforme sua estratégia
+  const valorBonus2PlanilhaDiaria = 27; // Exemplo de valor, ajuste conforme sua estratégia
 
   const valorTotalOriginal = valorEbookOriginal + valorBonus1PlanilhaMensal + valorBonus2PlanilhaDiaria;
 
@@ -102,10 +102,11 @@ export default function Bonus() {
         </div>
 
         <div className="mt-12 text-center">
+          {/* Kiwify Checkout Button */}
           <KiwifyCheckout
-            productId="YOUR_KIWIFY_PRODUCT_ID" // LEMBRE-SE DE ATUALIZAR ESTE ID
-            buttonText="QUERO DOMINAR MINHAS FINANÇAS COM TODOS OS BÔNUS!" // Texto do botão pode ser ajustado
-            className="pulse px-8 py-4 bg-[#C5A167] text-[#101010] rounded-lg font-bold uppercase tracking-wider transition transform hover:scale-105 hover:shadow-lg inline-block text-lg"
+            productId="DnSlT4G" // LEMBRE-SE DE ATUALIZAR ESTE ID
+            buttonText="QUERO MINHA TRANSFORMAÇÃO FINANCEIRA AGORA!"
+            className="pulse px-8 py-5 md:px-10 md:py-5 bg-[#C5A167] text-[#101010] rounded-lg font-bold uppercase tracking-wider transition transform hover:scale-105 hover:shadow-xl inline-flex items-center justify-center text-base md:text-lg text-center whitespace-normal break-words leading-tight w-full sm:w-auto mx-auto"
           />
           <p className="mt-4 text-sm text-[#F5F5F5]/70">
             <FaCheckSquare className="inline mr-1 text-[#C5A167]" /> Compra segura e acesso imediato.

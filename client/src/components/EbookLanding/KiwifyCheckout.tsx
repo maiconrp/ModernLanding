@@ -15,7 +15,7 @@ export default function KiwifyCheckout({
   
   const handleCheckout = () => {
     // Kiwify checkout URL format
-    window.open(`https://pay.kiwify.com.br/checkout/${productId}`, "_blank");
+    window.open(`https://pay.kiwify.com.br/${productId}`, "_blank");
   };
 
   return (

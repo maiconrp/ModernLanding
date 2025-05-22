@@ -1,5 +1,6 @@
 import { FaCertificate, FaInstagram } from "react-icons/fa";
 import SectionHeader from "@/components/ui/section-header";
+import FotoBreno from '@/assets/images/capa zap (2).jpg';
 
 export default function Authority() {
   return (
@@ -16,7 +17,7 @@ export default function Authority() {
               <div className="absolute -inset-4 bg-gradient-to-r from-[#1E2B4F] to-[#C5A167] opacity-20 blur-lg rounded-full"></div>
               {/* Professional image of financial consultant or company founder */}
               <img 
-                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                src={FotoBreno}
                 alt="Equipe Idealize Gestão" 
                 className="w-full h-auto rounded-full aspect-square object-cover border-4 border-[#C5A167]/30 relative z-10"
               />
@@ -34,15 +35,15 @@ export default function Authority() {
               </h3>
               
               <p className="text-lg leading-relaxed mb-6">
- Olá! Somos a Idealize Gestão, e nossa jornada começou com a paixão de transformar a relação das pessoas com o dinheiro. Fundada por Breno Baleeiro, com mais de 8 anos de experiência, dedicamos nosso trabalho a descomplicar as finanças e mostrar que é possível ter uma vida financeira mais leve e próspera.
+                Olá! Somos a Idealize Gestão, fundada por Breno Baleeiro. Com mais de 8 anos de experiência, nossa paixão é descomplicar finanças para uma vida mais leve e próspera.
               </p>
-              
+
               <p className="text-lg leading-relaxed mb-6">
- Já tivemos o privilégio de caminhar ao lado de mais de 1.500 pessoas e empresas, ajudando-as a sair do sufoco, organizar as contas e construir um futuro mais tranquilo. Nossa maior alegria é ver a transformação acontecendo na prática, dia após dia.
+                Ajudamos mais de 1.500 pessoas e empresas a organizar contas e construir um futuro tranquilo. Vemos a transformação acontecer diariamente.
               </p>
-              
+
               <p className="text-lg leading-relaxed">
- Acreditamos que sua história com o dinheiro é única. Por isso, nossa abordagem vai além dos números: oferecemos um acompanhamento personalizado, com soluções que realmente se encaixam na sua vida. Queremos te apoiar em cada passo, transformando desafios em oportunidades de crescimento, porque para a Idealize, transformar ideias em realidade é a nossa expertise e a nossa paixão.
+                Sua história financeira é única. Oferecemos acompanhamento personalizado com soluções que se encaixam na sua vida, transformando desafios em crescimento. Para a Idealize, realizar ideias é nossa expertise e paixão.
               </p>
               
               <div className="mt-6 flex items-center">
